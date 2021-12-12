@@ -482,10 +482,6 @@
 @media (max-width: 576px) {
   .section-6 .content form .row .col-md-6 {
     width: 50%;
-    padding: 0 0.25rem;
-  }
-  .section-6 .content form .row .col-sm-12 {
-    padding: 0 0.25rem;
   }
 }
 
