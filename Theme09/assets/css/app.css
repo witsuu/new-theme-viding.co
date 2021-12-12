@@ -580,10 +580,13 @@
 
 .section-7 .content .card {
   background-color: #ffffff95;
-  padding: 24px;
-  overflow: hidden;
   height: 348px;
   border: none;
+}
+
+.section-7 .content .card .card-body {
+  padding: 24px;
+  overflow: hidden;
 }
 
 @media (max-width: 576px) {
