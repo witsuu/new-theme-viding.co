@@ -256,7 +256,7 @@
 }
 
 .section-2 .content {
-  padding: 3.5rem 0;
+  padding: 8rem 0;
   text-align: center;
 }
 
@@ -371,18 +371,22 @@
 }
 
 .section-2 .content .btn-custom {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 200px;
   border-radius: 50px;
   color: #ffffff;
-  padding: 0.75rem 2rem;
+  padding: 0.75rem;
   margin: 5rem 0 6rem 0;
 }
 
 @media (max-width: 768px) {
   .section-2 .content .btn-custom {
     margin: 2rem 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-2 .content .btn-custom {
+    width: 156px;
   }
 }
 
@@ -481,7 +485,7 @@
 
 @media (max-width: 576px) {
   .section-4 .content .gallery {
-    width: 80%;
+    width: 100%;
   }
 }
 
@@ -497,8 +501,20 @@
   left: -25px;
 }
 
+@media (max-width: 576px) {
+  .section-4 .content .gallery .nav .btn.prev {
+    left: -10px;
+  }
+}
+
 .section-4 .content .gallery .nav .btn.next {
   right: -25px;
+}
+
+@media (max-width: 576px) {
+  .section-4 .content .gallery .nav .btn.next {
+    right: -10px;
+  }
 }
 
 .section-4 .content .gallery .nav .btn:focus {
@@ -949,7 +965,7 @@
 
 h1 {
   font-family: "Dynalight", sans-serif;
-  font-size: 65px;
+  font-size: 88px;
 }
 
 @media (max-width: 576px) {
@@ -960,7 +976,7 @@ h1 {
 
 h2 {
   font-family: "Dynalight", sans-serif;
-  font-size: 32px;
+  font-size: 40px;
 }
 
 @media (max-width: 576px) {
@@ -971,7 +987,7 @@ h2 {
 
 h3 {
   font-family: "Lato";
-  font-size: 36px;
+  font-size: 40px;
   font-weight: 700;
 }
 
@@ -983,7 +999,7 @@ h3 {
 
 h4 {
   font-family: "Lato";
-  font-size: 28px;
+  font-size: 36px;
 }
 
 @media (max-width: 576px) {
@@ -992,11 +1008,22 @@ h4 {
   }
 }
 
+h5 {
+  font-family: "Lato";
+  font-size: 28px;
+}
+
+@media (max-width: 576px) {
+  h5 {
+    font-size: 20px;
+  }
+}
+
 p,
 h6,
 ol {
   font-family: "Lato";
-  font-size: 16px;
+  font-size: 20px;
 }
 
 @media (max-width: 768px) {
@@ -1013,6 +1040,16 @@ ol {
   ol {
     font-size: 14px;
     line-height: 1.8rem;
+  }
+}
+
+.title-with-border {
+  margin-bottom: 40px !important;
+}
+
+@media (max-width: 576px) {
+  .title-with-border {
+    margin-bottom: 28px !important;
   }
 }
 

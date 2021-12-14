@@ -177,6 +177,7 @@
 
 .section-2 {
   position: relative;
+  overflow: hidden;
 }
 
 .section-2 .bg-color01,
@@ -235,9 +236,23 @@
      object-position: -460px -200px;
 }
 
+@media (max-width: 576px) {
+  .section-2 .content .avatar.man {
+    -o-object-position: -520px -200px;
+       object-position: -520px -200px;
+  }
+}
+
 .section-2 .content .avatar.girl {
   -o-object-position: -165px -200px;
      object-position: -165px -200px;
+}
+
+@media (max-width: 576px) {
+  .section-2 .content .avatar.girl {
+    -o-object-position: -202px -200px;
+       object-position: -202px -200px;
+  }
 }
 
 .section-2 .content .row {
@@ -742,6 +757,7 @@
 
 .section-9 {
   position: relative;
+  overflow: hidden;
 }
 
 .section-9 .content {
@@ -780,6 +796,7 @@
 .section-10 {
   position: relative;
   background-color: #4ba8924d;
+  overflow: hidden;
 }
 
 .section-10 .content {

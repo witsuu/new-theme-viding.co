@@ -673,6 +673,7 @@
 .section-10 {
   position: relative;
   background-color: #ffe7ff;
+  overflow: hidden;
 }
 
 .section-10 .content {
@@ -694,11 +695,11 @@
   color: #ffffff;
 }
 
-.section-11 .content .thank {
+.section-11 .content.thank {
   padding: 5rem 0;
 }
 
-.section-11 .content footer {
+.section-11 footer {
   background-color: #ca6591;
   padding: 1rem 0;
 }

@@ -199,11 +199,11 @@
 }
 
 .section-2 .content {
-  padding: 3.5rem 0;
+  padding: 8rem 0;
   text-align: center;
 }
 
-.section-2 .content h3 {
+.section-2 .content h2 {
   color: #825e28;
 }
 
@@ -283,7 +283,7 @@
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 0.5rem 2rem;
+  padding: 1rem 2rem;
   margin: auto;
   background-size: 100% 100%;
   margin-bottom: 2rem;
@@ -301,7 +301,6 @@
 .section-4 .content .img-gallery {
   width: 100%;
   height: auto;
-  border-radius: 10px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -325,7 +324,7 @@
 
 @media (max-width: 576px) {
   .section-4 .content .gallery {
-    width: 80%;
+    width: 95%;
   }
 }
 
@@ -575,6 +574,7 @@
 
 .wish-sm {
   display: none;
+  overflow: hidden;
 }
 
 @media (max-width: 576px) {
@@ -659,6 +659,7 @@
 
 .section-9 {
   position: relative;
+  overflow: hidden;
 }
 
 .section-9 .flower {
@@ -706,7 +707,7 @@
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 0.5rem 2rem;
+  padding: 1.5rem 2rem;
   margin: auto;
   background-size: 100% 100%;
   margin-bottom: 2rem;
@@ -729,7 +730,6 @@
 
 .section-9 .content .btn-custom {
   width: 50%;
-  margin: 2rem 0;
 }
 
 @media (max-width: 576px) {
@@ -741,6 +741,7 @@
 .section-10 {
   position: relative;
   background-color: #ffffff;
+  overflow: hidden;
 }
 
 .section-10 .content {
@@ -789,6 +790,7 @@
   padding: 0.75rem 0;
   text-transform: capitalize;
   font-size: 16px;
+  margin-top: 40px;
 }
 
 @media (max-width: 576px) {
@@ -800,18 +802,18 @@
 
 h1 {
   font-family: "Dita Sweet", sans-serif;
-  font-size: 60px;
+  font-size: 64px;
 }
 
 @media (max-width: 576px) {
   h1 {
-    font-size: 52px;
+    font-size: 48px;
   }
 }
 
 h2 {
   font-family: "Dita Sweet", sans-serif;
-  font-size: 52px;
+  font-size: 36px;
 }
 
 @media (max-width: 576px) {
@@ -822,7 +824,7 @@ h2 {
 
 h3 {
   font-family: "Dita Sweet";
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 700;
 }
 
@@ -834,7 +836,7 @@ h3 {
 
 h4 {
   font-family: "Cabin";
-  font-size: 32px;
+  font-size: 28px;
 }
 
 @media (max-width: 576px) {
