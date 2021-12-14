@@ -27,9 +27,23 @@
   content: "";
   position: absolute;
   top: 50%;
-  left: -70px;
-  right: -70px;
+  left: -25px;
+  right: -25px;
   border-top: 1px solid #825e28;
+}
+
+@media (max-width: 768px) {
+  .countdown::before {
+    left: -18px;
+    right: -18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .countdown::before {
+    left: -2px;
+    right: -2px;
+  }
 }
 
 .countdown .days,
@@ -79,7 +93,7 @@
 .countdown .seconds .angka {
   margin: 0;
   font-weight: 500;
-  font-size: 48px;
+  font-size: 52px;
 }
 
 @media (max-width: 576px) {
@@ -87,7 +101,7 @@
   .countdown .hours .angka,
   .countdown .minutes .angka,
   .countdown .seconds .angka {
-    font-size: 28px;
+    font-size: 32px;
   }
 }
 
@@ -108,8 +122,14 @@
   position: relative;
   background-image: url(../images/bg-header.jfif);
   background-size: cover;
-  background-position: center;
+  background-position: center -250px;
   overflow: hidden;
+}
+
+@media (max-width: 1200px) {
+  .section-1 {
+    background-position: center;
+  }
 }
 
 .section-1 .border-image {
@@ -183,7 +203,7 @@
   text-align: center;
 }
 
-.section-2 .content h2 {
+.section-2 .content h3 {
   color: #825e28;
 }
 
@@ -206,7 +226,7 @@
   width: 100%;
   height: auto;
   position: relative;
-  z-index: 2;
+  z-index: 5;
 }
 
 @media (max-width: 768px) {
@@ -780,7 +800,7 @@
 
 h1 {
   font-family: "Dita Sweet", sans-serif;
-  font-size: 65px;
+  font-size: 60px;
 }
 
 @media (max-width: 576px) {
@@ -791,7 +811,7 @@ h1 {
 
 h2 {
   font-family: "Dita Sweet", sans-serif;
-  font-size: 32px;
+  font-size: 52px;
 }
 
 @media (max-width: 576px) {
@@ -801,8 +821,8 @@ h2 {
 }
 
 h3 {
-  font-family: "Cabin";
-  font-size: 36px;
+  font-family: "Dita Sweet";
+  font-size: 32px;
   font-weight: 700;
 }
 
@@ -814,11 +834,22 @@ h3 {
 
 h4 {
   font-family: "Cabin";
-  font-size: 28px;
+  font-size: 32px;
 }
 
 @media (max-width: 576px) {
   h4 {
+    font-size: 20px;
+  }
+}
+
+h5 {
+  font-family: "Cabin";
+  font-size: 28px;
+}
+
+@media (max-width: 576px) {
+  h5 {
     font-size: 20px;
   }
 }
@@ -862,7 +893,8 @@ ol {
   height: 100vh;
   width: 100%;
   background-color: #825e28;
-  position: relative;
+  position: fixed;
+  z-index: 100;
 }
 
 .loader-wrapper .loader-1 {

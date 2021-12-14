@@ -26,7 +26,7 @@
 .countdown .hours,
 .countdown .minutes,
 .countdown .seconds {
-  background-color: #ff8dbf;
+  background-color: rgba(255, 143, 191, 0.8);
   border-radius: 50%;
   aspect-ratio: 1;
   width: 100px;
@@ -75,6 +75,16 @@
 .countdown .minutes .angka,
 .countdown .seconds .angka {
   margin-bottom: 0;
+  font-weight: 500;
+}
+
+@media (max-width: 576px) {
+  .countdown .days .angka,
+  .countdown .hours .angka,
+  .countdown .minutes .angka,
+  .countdown .seconds .angka {
+    font-size: 20px;
+  }
 }
 
 .countdown .days .huruf,
@@ -221,6 +231,22 @@
   color: #ff8dbf;
 }
 
+@media (max-width: 576px) {
+  .section-2 .content .col-md-4.mt-sm {
+    margin-top: 72px;
+  }
+}
+
+.section-2 .content .avatar-detail {
+  margin: auto;
+}
+
+@media (max-width: 576px) {
+  .section-2 .content .avatar-detail {
+    width: 80%;
+  }
+}
+
 .section-2 .content .avatar-wrap {
   position: relative;
 }
@@ -294,6 +320,7 @@
   aspect-ratio: 1;
   border-radius: 50%;
   position: relative;
+  margin: 32px 0;
 }
 
 @media (max-width: 992px) {
@@ -305,7 +332,6 @@
 @media (max-width: 576px) {
   .section-2 .content .avatar-wrap .avatar-image {
     width: 180px;
-    margin: 2rem 0;
   }
 }
 
@@ -433,7 +459,7 @@
 .section-5 .content .maps-embed {
   width: 100%;
   aspect-ratio: 2.5;
-  margin-bottom: -70px;
+  margin-bottom: -250px;
 }
 
 @media (max-width: 576px) {
@@ -465,7 +491,7 @@
 
 .section-6 .content {
   text-align: center;
-  padding: 10rem 0 3rem 0;
+  padding: 14rem 0 3rem 0;
   position: relative;
 }
 
@@ -490,6 +516,7 @@
   border-color: #ff8dbf;
   padding: 0.75rem 1rem;
   font-family: "Montserrat", sans-serif;
+  color: #ff8dbf;
 }
 
 .section-6 .content form select {
@@ -677,11 +704,11 @@
 }
 
 .btn-custom {
-  background-color: #ca6591;
+  background-color: #ff8dbf;
   color: #fff;
   font-family: "Montserrat";
   width: 100%;
-  padding: 0.5rem 0;
+  padding: 0.75rem 0;
   text-transform: capitalize;
   font-size: 16px;
 }
@@ -695,7 +722,7 @@
 
 h1 {
   font-family: "Elsie", sans-serif;
-  font-size: 65px;
+  font-size: 64px;
 }
 
 @media (max-width: 576px) {
@@ -717,7 +744,7 @@ h2 {
 
 h3 {
   font-family: "Montserrat";
-  font-size: 36px;
+  font-size: 40px;
   font-weight: 700;
 }
 
@@ -729,11 +756,22 @@ h3 {
 
 h4 {
   font-family: "Montserrat";
-  font-size: 28px;
+  font-size: 36px;
 }
 
 @media (max-width: 576px) {
   h4 {
+    font-size: 20px;
+  }
+}
+
+h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+}
+
+@media (max-width: 576px) {
+  h5 {
     font-size: 20px;
   }
 }
@@ -762,39 +800,12 @@ ol {
   }
 }
 
-.divider {
-  border-bottom: 2px solid #ca6591;
-  width: 100%;
-  position: relative;
-  margin-bottom: 2rem;
-}
-
-.divider::before, .divider::after {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  border: 2px solid #ca6591;
-  border-radius: 50%;
-  content: "";
-  aspect-ratio: 1;
-  background-color: #ffffff;
-}
-
-.divider::before {
-  width: 20px;
-}
-
-.divider::after {
-  width: 10px;
-}
-
 .loader-wrapper {
   height: 100vh;
   width: 100%;
   background-color: #ff8dbf;
-  position: relative;
+  position: fixed;
+  overflow: hidden;
 }
 
 .loader-wrapper .loader-1 {
