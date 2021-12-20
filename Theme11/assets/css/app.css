@@ -444,6 +444,11 @@
 .section-4 .content .gallery {
   width: 100%;
   position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto auto;
+      grid-template-columns: auto auto auto auto auto;
+  gap: 1rem;
 }
 
 .section-4 .content .gallery::before {
@@ -464,44 +469,35 @@
   }
 }
 
-.section-4 .content .gallery .gallery-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.section-4 .content .gallery a:nth-child(3), .section-4 .content .gallery a:nth-child(9), .section-4 .content .gallery a:nth-child(15) {
+  -ms-grid-column: 6;
+  -ms-grid-column-span: -3;
+  grid-column: 6 / 3;
+}
+
+.section-4 .content .gallery a:nth-child(4), .section-4 .content .gallery a:nth-child(10) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / 4;
+}
+
+.section-4 .content .gallery .photo {
   width: 100%;
-  margin-bottom: 0.45rem;
+  height: 270px;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: relative;
-}
-
-.section-4 .content .gallery .gallery-row .photo-first {
-  width: 25%;
-  padding: 0 0.225rem;
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 270px;
+  -ms-grid-column: 1;
+  grid-column: 1;
 }
 
 @media (max-width: 576px) {
-  .section-4 .content .gallery .gallery-row .photo-first {
+  .section-4 .content .gallery .photo {
     height: 107px;
   }
 }
 
-.section-4 .content .gallery .gallery-row .photo-second {
-  width: 50%;
-  height: 270px;
-  padding: 0 0.225rem;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-@media (max-width: 576px) {
-  .section-4 .content .gallery .gallery-row .photo-second {
-    height: 107px;
-  }
-}
-
-.section-4 .content .gallery .yt-embed {
+.section-4 .content .yt-embed {
   width: 100%;
   aspect-ratio: 2;
 }
@@ -543,6 +539,12 @@
   width: 180px;
   height: 270px;
   border: 3px solid #3b3450;
+}
+
+@media (max-width: 1200px) {
+  .section-5 .content .maps::before {
+    right: -35px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -773,8 +775,8 @@
 
 @media (max-width: 576px) {
   .section-9 .content::before {
-    height: 125px;
-    width: 66px;
+    height: 100px;
+    width: 40px;
   }
 }
 
