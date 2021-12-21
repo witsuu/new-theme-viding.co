@@ -703,6 +703,10 @@
   color: #fff;
 }
 
+html {
+  font-size: 16px;
+}
+
 .btn-custom {
   background-color: #5f4f1e;
   color: #fff;

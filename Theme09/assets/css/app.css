@@ -848,6 +848,10 @@
   color: #ffffff;
 }
 
+html {
+  font-size: 16px;
+}
+
 .btn-custom {
   background-color: #4ba891;
   color: #fff;

@@ -704,6 +704,10 @@
   padding: 1rem 0;
 }
 
+html {
+  font-size: 16px;
+}
+
 .btn-custom {
   background-color: #ff8dbf;
   color: #fff;
