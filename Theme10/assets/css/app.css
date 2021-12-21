@@ -11,7 +11,7 @@
   text-align: center;
   position: relative;
   gap: 2rem;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #5f4f1e48;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   padding: 1rem;
@@ -84,7 +84,7 @@
   .countdown .hours .angka,
   .countdown .minutes .angka,
   .countdown .seconds .angka {
-    font-size: 28px;
+    font-size: 32px;
   }
 }
 
@@ -424,7 +424,7 @@
 
 .section-6 .content .maps-embed {
   width: 100%;
-  aspect-ratio: 1.75;
+  height: 314px;
   margin-bottom: 0.75rem;
 }
 
@@ -732,7 +732,7 @@
 
 h1 {
   font-family: "Yeseva One", sans-serif;
-  font-size: 44px;
+  font-size: 48px;
 }
 
 @media (max-width: 576px) {
@@ -743,7 +743,7 @@ h1 {
 
 h2 {
   font-family: "Yeseva One", sans-serif;
-  font-size: 32px;
+  font-size: 44px;
 }
 
 @media (max-width: 576px) {
@@ -753,7 +753,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Fira Sans";
+  font-family: "Yeseva One";
   font-size: 32px;
   font-weight: 700;
   text-transform: uppercase;
@@ -767,13 +767,13 @@ h3 {
 
 h4 {
   font-family: "Fira Sans";
-  font-size: 28px;
+  font-size: 32px;
   font-weight: 600;
 }
 
 @media (max-width: 576px) {
   h4 {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
@@ -784,12 +784,22 @@ h5 {
 
 @media (max-width: 576px) {
   h5 {
-    font-size: 20px;
+    font-size: 16px;
+  }
+}
+
+h6 {
+  font-family: "Fira Sans";
+  font-size: 24px;
+}
+
+@media (max-width: 576px) {
+  h6 {
+    font-size: 14px;
   }
 }
 
 p,
-h6,
 ol {
   font-family: "Fira Sans";
   font-size: 20px;
@@ -797,7 +807,6 @@ ol {
 
 @media (max-width: 768px) {
   p,
-  h6,
   ol {
     line-height: 1.8rem;
   }
@@ -805,7 +814,6 @@ ol {
 
 @media (max-width: 576px) {
   p,
-  h6,
   ol {
     font-size: 14px;
     line-height: 1.8rem;

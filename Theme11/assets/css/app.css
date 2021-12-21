@@ -175,6 +175,16 @@
   color: #bfadf0;
 }
 
+.section-1 .title-header .btn-custom {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem 2rem;
+  border-radius: 2px;
+  color: #3b3450;
+  background-color: #c5b4f5;
+}
+
 .section-1 .content {
   position: relative;
   padding: 3rem 0 6.5rem 0;
@@ -192,16 +202,6 @@
   .section-1 .content {
     padding: 2.5rem 0 5rem 0;
   }
-}
-
-.section-1 .content .btn-custom {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 0.5rem 2rem;
-  border-radius: 2px;
-  color: #3b3450;
-  background-color: #c5b4f5;
 }
 
 .section-1 .content .logo {
@@ -316,6 +316,7 @@
   z-index: 2;
   -o-object-fit: cover;
      object-fit: cover;
+  margin: auto;
 }
 
 @media (max-width: 768px) {
@@ -333,7 +334,7 @@
 }
 
 .section-2 .content .avatar-detail {
-  text-align: left;
+  text-align: center;
   padding: 5rem 0;
 }
 
@@ -344,7 +345,9 @@
 }
 
 .section-2 .content .avatar-detail .detail {
-  width: 206px;
+  width: 267px;
+  margin: auto;
+  text-align: left;
 }
 
 @media (max-width: 768px) {
@@ -441,7 +444,7 @@
   }
 }
 
-.section-4 .content .gallery {
+.section-4 .content .zoom-gallery {
   width: 100%;
   position: relative;
   display: -ms-grid;
@@ -451,7 +454,7 @@
   gap: 1rem;
 }
 
-.section-4 .content .gallery::before {
+.section-4 .content .zoom-gallery::before {
   position: absolute;
   content: "";
   width: 461px;
@@ -462,26 +465,26 @@
 }
 
 @media (max-width: 576px) {
-  .section-4 .content .gallery::before {
+  .section-4 .content .zoom-gallery::before {
     width: 230px;
     height: 290px;
     left: -15px;
   }
 }
 
-.section-4 .content .gallery a:nth-child(3), .section-4 .content .gallery a:nth-child(9), .section-4 .content .gallery a:nth-child(15) {
+.section-4 .content .zoom-gallery a:nth-child(3), .section-4 .content .zoom-gallery a:nth-child(9), .section-4 .content .zoom-gallery a:nth-child(15) {
   -ms-grid-column: 6;
   -ms-grid-column-span: -3;
   grid-column: 6 / 3;
 }
 
-.section-4 .content .gallery a:nth-child(4), .section-4 .content .gallery a:nth-child(10) {
+.section-4 .content .zoom-gallery a:nth-child(4), .section-4 .content .zoom-gallery a:nth-child(10) {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1 / 4;
 }
 
-.section-4 .content .gallery .photo {
+.section-4 .content .zoom-gallery .photo {
   width: 100%;
   height: 270px;
   -o-object-fit: cover;
@@ -492,7 +495,7 @@
 }
 
 @media (max-width: 576px) {
-  .section-4 .content .gallery .photo {
+  .section-4 .content .zoom-gallery .photo {
     height: 107px;
   }
 }
@@ -841,17 +844,21 @@
 
 .section-10 .content .right-bg {
   background-color: #c5b4f5;
-  padding: 6rem 0 6rem 8rem;
+  padding: 0 0 0 6rem;
   margin-left: -80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (max-width: 768px) {
-  .section-10 .content .right-bg {
-    padding: 3rem 0 3rem 6rem;
-  }
-}
-
-@media (max-width: 576px) {
   .section-10 .content .right-bg {
     padding: 4rem 2rem 2rem;
     margin: -20px 0 0;
@@ -890,7 +897,7 @@
   padding: 2rem 4rem;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .section-11 .content .card .card-body {
     padding: 2rem;
   }
@@ -958,7 +965,7 @@ h1 {
 
 @media (max-width: 576px) {
   h1 {
-    font-size: 64px;
+    font-size: 72px;
   }
 }
 
@@ -970,12 +977,12 @@ h2 {
 
 @media (max-width: 576px) {
   h2 {
-    font-size: 32px;
+    font-size: 40px;
   }
 }
 
 h3 {
-  font-family: "Public Sans";
+  font-family: "Bebas Neue";
   font-size: 32px;
   font-weight: 700;
   text-transform: uppercase;
@@ -984,7 +991,7 @@ h3 {
 
 @media (max-width: 576px) {
   h3 {
-    font-size: 20px;
+    font-size: 28px;
   }
 }
 
@@ -996,13 +1003,13 @@ h4 {
 
 @media (max-width: 576px) {
   h4 {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 
 h5 {
   font-family: "Public Sans";
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 600;
 }
 
@@ -1012,8 +1019,19 @@ h5 {
   }
 }
 
+h6 {
+  font-family: "Public Sans";
+  font-size: 28px;
+  font-weight: 600;
+}
+
+@media (max-width: 576px) {
+  h6 {
+    font-size: 20px;
+  }
+}
+
 p,
-h6,
 ol {
   font-family: "Public Sans";
   font-size: 20px;
@@ -1021,7 +1039,6 @@ ol {
 
 @media (max-width: 768px) {
   p,
-  h6,
   ol {
     line-height: 1.8rem;
   }
@@ -1029,7 +1046,6 @@ ol {
 
 @media (max-width: 576px) {
   p,
-  h6,
   ol {
     font-size: 14px;
     line-height: 1.8rem;
