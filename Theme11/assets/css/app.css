@@ -878,11 +878,11 @@
   position: relative;
 }
 
-@media (min-width: 768px) {
-  .section-11 .content .col-md-11 {
+@media (min-width: 992px) {
+  .section-11 .content .col-lg-11 {
     padding: 0;
   }
-  .section-11 .content .col-md-11 .sm {
+  .section-11 .content .col-lg-11 .sm {
     display: none;
   }
 }

@@ -244,31 +244,69 @@
 
 .section-2 .content .avatar-wrapper {
   position: relative;
+  width: 75%;
+  margin: auto;
 }
 
 @media (max-width: 768px) {
   .section-2 .content .avatar-wrapper {
     margin-top: 2rem;
-  }
-}
-
-.section-2 .content .avatar-wrapper .avatar-image {
-  width: 75%;
-  height: auto;
-  position: relative;
-  z-index: 2;
-}
-
-@media (max-width: 768px) {
-  .section-2 .content .avatar-wrapper .avatar-image {
     width: 320px;
-    margin: 1rem 0;
   }
 }
 
 @media (max-width: 576px) {
+  .section-2 .content .avatar-wrapper {
+    width: 251px;
+    height: 302px;
+  }
+}
+
+.section-2 .content .avatar-wrapper .waves-top,
+.section-2 .content .avatar-wrapper .waves-right,
+.section-2 .content .avatar-wrapper .waves-bottom,
+.section-2 .content .avatar-wrapper .waves-left {
+  position: absolute;
+  z-index: 5;
+}
+
+.section-2 .content .avatar-wrapper .waves-top {
+  top: -1px;
+  left: -1px;
+  width: 100%;
+}
+
+.section-2 .content .avatar-wrapper .waves-right {
+  top: -1px;
+  right: -1px;
+  height: 100%;
+}
+
+.section-2 .content .avatar-wrapper .waves-bottom {
+  bottom: -1px;
+  left: -1px;
+  width: 100%;
+}
+
+.section-2 .content .avatar-wrapper .waves-left {
+  top: -1px;
+  left: -1px;
+  height: 100%;
+}
+
+.section-2 .content .avatar-wrapper .avatar-image {
+  width: 100%;
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 319px;
+  -o-object-position: center;
+     object-position: center;
+}
+
+@media (max-width: 768px) {
   .section-2 .content .avatar-wrapper .avatar-image {
-    width: 200px;
+    margin: 1rem 0;
   }
 }
 
@@ -321,13 +359,53 @@
   color: #000;
 }
 
-.section-3 .content .avatar-couple {
+.section-3 .content .avatar-wrapper {
+  position: relative;
+}
+
+.section-3 .content .avatar-wrapper .waves-top,
+.section-3 .content .avatar-wrapper .waves-right,
+.section-3 .content .avatar-wrapper .waves-bottom,
+.section-3 .content .avatar-wrapper .waves-left {
+  position: absolute;
+  z-index: 5;
+}
+
+.section-3 .content .avatar-wrapper .waves-top {
+  top: -1px;
+  left: -1px;
   width: 100%;
-  height: auto;
+}
+
+.section-3 .content .avatar-wrapper .waves-right {
+  top: -1px;
+  right: -1px;
+  height: 100%;
+}
+
+.section-3 .content .avatar-wrapper .waves-bottom {
+  bottom: -2px;
+  left: -1px;
+  width: 100%;
+}
+
+.section-3 .content .avatar-wrapper .waves-left {
+  top: -1px;
+  left: -1px;
+  height: 100%;
+}
+
+.section-3 .content .avatar-wrapper .avatar-couple {
+  width: 100%;
+  height: 617px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top center;
+     object-position: top center;
 }
 
 @media (max-width: 576px) {
-  .section-3 .content .avatar-couple {
+  .section-3 .content .avatar-wrapper .avatar-couple {
     margin-bottom: 3rem;
   }
 }
@@ -350,6 +428,7 @@
   position: relative;
   text-align: center;
   padding: 3rem 0;
+  overflow: hidden;
 }
 
 .section-5 h3,
@@ -577,13 +656,53 @@
   color: #000;
 }
 
-.section-9 .content .avatar-couple {
+.section-9 .content .avatar-wrapper {
+  position: relative;
+}
+
+.section-9 .content .avatar-wrapper .waves-top,
+.section-9 .content .avatar-wrapper .waves-right,
+.section-9 .content .avatar-wrapper .waves-bottom,
+.section-9 .content .avatar-wrapper .waves-left {
+  position: absolute;
+  z-index: 5;
+}
+
+.section-9 .content .avatar-wrapper .waves-top {
+  top: -1px;
+  left: -1px;
   width: 100%;
-  height: auto;
+}
+
+.section-9 .content .avatar-wrapper .waves-right {
+  top: -1px;
+  right: -1px;
+  height: 100%;
+}
+
+.section-9 .content .avatar-wrapper .waves-bottom {
+  bottom: -3px;
+  left: -1px;
+  width: 100%;
+}
+
+.section-9 .content .avatar-wrapper .waves-left {
+  top: -1px;
+  left: -1px;
+  height: 100%;
+}
+
+.section-9 .content .avatar-wrapper .avatar-couple {
+  width: 100%;
+  height: 617px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top center;
+     object-position: top center;
 }
 
 @media (max-width: 576px) {
-  .section-9 .content .avatar-couple {
+  .section-9 .content .avatar-wrapper .avatar-couple {
     margin-bottom: 3rem;
   }
 }
@@ -671,13 +790,12 @@
 }
 
 .section-12 {
-  overflow: hidden;
   position: relative;
 }
 
 .section-12 .waves {
   position: absolute;
-  top: 0;
+  top: -5px;
   left: 0;
   width: 100%;
   -webkit-transform: scale(-1);
@@ -747,7 +865,8 @@ h1 {
 
 h2 {
   font-family: "Yeseva One", sans-serif;
-  font-size: 44px;
+  font-size: 32px;
+  font-weight: 500;
 }
 
 @media (max-width: 576px) {
@@ -757,7 +876,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Yeseva One";
+  font-family: "Fira Sans";
   font-size: 32px;
   font-weight: 700;
   text-transform: uppercase;
