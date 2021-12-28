@@ -13,6 +13,8 @@
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.8/dist/css/splide.min.css"
+        integrity="sha256-sB1O2oXn5yaSW1T/92q2mGU86IDhZ0j1Ya8eSv+6QfM=" crossorigin="anonymous">
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -140,26 +142,94 @@
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-md-8">
-                            <div class="gallery">
-                                <ul id="lightSlider">
-                                    <li data-thumb="./assets/images/photo01.jfif"><img
-                                            src="./assets/images/photo01.jfif" alt="photo" class="photo"></li>
-                                    <li data-thumb="./assets/images/photo02.jfif"><img
-                                            src="./assets/images/photo02.jfif" alt="photo" class="photo"></li>
-                                    <li data-thumb="./assets/images/photo01.jfif"><img
-                                            src="./assets/images/photo01.jfif" alt="photo" class="photo"></li>
-                                    <li data-thumb="./assets/images/photo02.jfif"><img
-                                            src="./assets/images/photo02.jfif" alt="photo" class="photo"></li>
-                                    <li data-thumb="./assets/images/photo01.jfif"><img
-                                            src="./assets/images/photo01.jfif" alt="photo" class="photo"></li>
-                                    <li data-thumb="./assets/images/photo02.jfif"><img
-                                            src="./assets/images/photo02.jfif" alt="photo" class="photo"></li>
-                                    <li data-thumb="./assets/images/photo01.jfif"><img
-                                            src="./assets/images/photo01.jfif" alt="photo" class="photo"></li>
-                                    <li data-thumb="./assets/images/photo02.jfif"><img
-                                            src="./assets/images/photo02.jfif" alt="photo" class="photo"></li>
-                                </ul>
+                            <div id="main-slider" class="splide">
+                                <div class="splide__track">
+                                    <ul class="splide__list">
+                                        <li class="splide__slide">
+                                            <img src="./assets/images/photo01.jfif" alt="gallery" class="img-gallery" />
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="./assets/images/photo02.jfif" alt="gallery" class="img-gallery" />
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="./assets/images/photo01.jfif" alt="gallery" class="img-gallery" />
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="./assets/images/photo02.jfif" alt="gallery" class="img-gallery" />
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="./assets/images/photo01.jfif" alt="gallery" class="img-gallery" />
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="./assets/images/photo02.jfif" alt="gallery" class="img-gallery" />
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="./assets/images/photo01.jfif" alt="gallery" class="img-gallery" />
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="./assets/images/photo02.jfif" alt="gallery" class="img-gallery" />
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
+                            <div id="thumbnail-slider" class="splide">
+                                <div class="splide__track">
+                                    <ul class="splide__list">
+                                        <li class="splide__slide">
+                                            <img src="./assets/images/photo01.jfif" alt="gallery"
+                                                class="img-thumbnail" />
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="./assets/images/photo02.jfif" alt="gallery"
+                                                class="img-thumbnail" />
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="./assets/images/photo01.jfif" alt="gallery"
+                                                class="img-thumbnail" />
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="./assets/images/photo02.jfif" alt="gallery"
+                                                class="img-thumbnail" />
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="./assets/images/photo01.jfif" alt="gallery"
+                                                class="img-thumbnail" />
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="./assets/images/photo02.jfif" alt="gallery"
+                                                class="img-thumbnail" />
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="./assets/images/photo01.jfif" alt="gallery"
+                                                class="img-thumbnail" />
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="./assets/images/photo02.jfif" alt="gallery"
+                                                class="img-thumbnail" />
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- <ul id="thumbnails" class="thumbnails">
+                                <li class="thumbnail">
+                                    <img src="./assets/images/photo01.jfif" alt="gallery" class="img-gallery" />
+                                </li>
+                                <li class="thumbnail">
+                                    <img src="./assets/images/photo02.jfif" alt="gallery" class="img-gallery" />
+                                </li>
+                                <li class="thumbnail">
+                                    <img src="./assets/images/photo01.jfif" alt="gallery" class="img-gallery" />
+                                </li>
+                                <li class="thumbnail">
+                                    <img src="./assets/images/photo02.jfif" alt="gallery" class="img-gallery" />
+                                </li>
+                                <li class="thumbnail">
+                                    <img src="./assets/images/photo01.jfif" alt="gallery" class="img-gallery" />
+                                </li>
+                                <li class="thumbnail">
+                                    <img src="./assets/images/photo02.jfif" alt="gallery" class="img-gallery" />
+                                </li>
+                            </ul> -->
                         </div>
                     </div>
                 </div>
@@ -194,15 +264,16 @@
                 <div class="container">
                     <div class="row text-center align-items-end row-maps">
                         <div class="col-md-6">
-                            <div class="mb-5">
-                                <h4 class="mb-3">Wedding party</h4>
+                            <div class="mb-3" data-aos="zoom-in">
+                                <h4 class="mb-3" data-aos="fade-down">Wedding party</h4>
                                 <h5>Hotel Shangri-La</h5>
                                 <p class="mb-0">Monday, 13 December 2021</p>
                                 <p class="mb-0">08.00 - 09.00 WIB</p>
                             </div>
-                            <p class="mb-3">Kota BNI, Jl. Jend. Sudirman No.Kav. 1, Karet Tengsin, Kecamatan
+                            <p class="mb-3" data-aos="zoom-in">Kota BNI, Jl. Jend. Sudirman No.Kav. 1, Karet Tengsin,
+                                Kecamatan
                                 Tanah Abang, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10220</p>
-                            <div class="maps-lg">
+                            <div class="maps-lg" data-aos="zoom-in">
                                 <div class="mapouter">
                                     <div class="gmap_canvas"><iframe class="maps-embed" id="gmap_canvas"
                                             src="https://maps.google.com/maps?q=itc%20surabaya&t=&z=13&ie=UTF8&iwloc=&output=embed"
@@ -213,12 +284,12 @@
                             </div>
                         </div>
                         <div class="col-md-6 text-center">
-                            <div class="mb-5">
+                            <div class="mb-5" data-aos="zoom-in">
                                 <p>If you will be present at the event location. Please follow health protocol and fill
                                     the form below</p>
                                 <img src="./assets/icons/Prokes.png" alt="prokes" class="icons-prokes">
                             </div>
-                            <div class="maps-sm">
+                            <div class="maps-sm" data-aos="zoom-in">
                                 <div class="mapouter">
                                     <div class="gmap_canvas"><iframe class="maps-embed" id="gmap_canvas"
                                             src="https://maps.google.com/maps?q=itc%20surabaya&t=&z=13&ie=UTF8&iwloc=&output=embed"
@@ -227,8 +298,8 @@
                                 </div>
                                 <a href="#" class="btn btn-custom">Location</a>
                             </div>
-                            <h4 class="font-newyork">Confirmation Attendance</h4>
-                            <form action="#" method="post">
+                            <h4 class="font-newyork" data-aos="zoom-in">Confirmation Attendance</h4>
+                            <form action="#" method="post" data-aos="zoom-in">
                                 <input type="text" placeholder="Name" class="form-control">
                                 <input type="text" placeholder="Email" class="form-control">
                                 <input type="text" placeholder="Nomor HP" class="form-control">
@@ -243,12 +314,12 @@
                 </div>
             </div>
         </section>
-        <section class="section-7">
+        <section class="section-7" style="overflow: hidden;">
             <div class="content">
                 <div class="container">
-                    <h3 class="title-with-border mb-5">Guest Book</h3>
+                    <h3 class="title-with-border mb-5" data-aos="fade-down">Guest Book</h3>
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6" data-aos="fade-right">
                             <form action="#" method="post">
                                 <input type="text" class="form-control mb-3" placeholder="Name">
                                 <input type="text" class="form-control mb-3" placeholder="Address">
@@ -257,7 +328,7 @@
                                 <button type="submit" class="btn btn-custom w-100">Send</button>
                             </form>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6" data-aos="fade-left">
                             <div class="card">
                                 <div class="card-body">
                                     <div class="slider" id="slider">
@@ -301,16 +372,16 @@
                 </div>
             </div>
         </section>
-        <section class="section-8">
+        <section class="section-8" style="overflow: hidden;">
             <div class="content">
                 <div class="container">
-                    <h3 class="mb-5">E-GIFT</h3>
-                    <div class="col-md-7 m-auto">
+                    <h3 class="mb-5" data-aos="fade-down">E-GIFT</h3>
+                    <div class="col-md-7 m-auto" data-aos="zoom-in">
                         <p>Without reducing our respect, if you intend to give wedding gifts online in various ways
                             various payment methods, please fill out the form provided below:</p>
                     </div>
                     <div class="row">
-                        <div class="col-md-8 col-sm-10 m-auto text-center">
+                        <div class="col-md-8 col-sm-10 m-auto text-center" data-aos="zoom-in">
                             <form action="#" method="post">
                                 <div class="row">
                                     <div class="col-md-6">
@@ -339,7 +410,7 @@
             <div class="container">
                 <div class="content">
                     <div class="row flex-column justify-content-center align-items-center">
-                        <div class="col-md-8 avatar-wrapper">
+                        <div class="col-md-8 avatar-wrapper" data-aos="zoom-in">
                             <embed src="./assets/images/waves-top.svg" class="waves-top">
                             <embed src="./assets/images/waves-right.svg" class="waves-right">
                             <embed src="./assets/images/waves-bottom.svg" class="waves-bottom">
@@ -347,8 +418,8 @@
                             <img src="./assets/images/prawed.jfif" alt="avatar" class="avatar-couple">
                         </div>
                         <div class="col-md-8">
-                            <h3 class="title-with-border">Apology</h3>
-                            <div class="col-md-10 m-auto">
+                            <h3 class="title-with-border" data-aos="fade-down">Apology</h3>
+                            <div class="col-md-10 m-auto" data-aos="zoom-in">
                                 <p>Due to the limitations of the current pandemic, we apologize for not being able to
                                     directly invite all of you to our wedding. Without reducing respect, allow us to
                                     expect your virtual presence and give us your blessing.
@@ -361,8 +432,8 @@
         </section>
         <section class="section-11 sm">
             <div class="content">
-                <h3 class="mb-5">Live Streaming</h3>
-                <div class="container">
+                <h3 class="mb-5" data-aos="fade-down">Live Streaming</h3>
+                <div class="container" data-aos="zoom-in">
                     <iframe class="yt-embed" src="https://www.youtube.com/embed/z2oKzxplzEY">
                     </iframe>
                     <a href="#" class="btn btn-custom">Join Youtube</a>
@@ -373,8 +444,8 @@
             <div class="content">
                 <div class="container">
                     <div class="mb-5 col-md-5 col-lg-4 m-auto">
-                        <h4 class="fw-bold mb-3">Live Wedding <br> Schedule</h4>
-                        <ol>
+                        <h4 class="fw-bold mb-3" data-aos="fade-left">Live Wedding <br> Schedule</h4>
+                        <ol data-aos="fade-right">
                             <li>
                                 <p class="mb-0">10.00 Live Wedding Schedule</p>
                             </li>
@@ -384,26 +455,27 @@
                         </ol>
                     </div>
                     <div class="col-md-6 m-auto">
-                        <h4 class="fw-bold mb-3">Live Wedding</h4>
-                        <p>Please watch throught the bride's Youtube Live to watch a series of live wedding events</p>
+                        <h4 class="fw-bold mb-3" data-aos="fade-left">Live Wedding</h4>
+                        <p data-aos="fade-right">Please watch throught the bride's Youtube Live to watch a series of
+                            live wedding events</p>
                     </div>
                 </div>
             </div>
         </section>
         <section class="section-11 lg">
             <div class="content">
-                <h3 class="mb-5">Live Streaming</h3>
-                <div class="container">
+                <h3 class="mb-5" data-aos="fade-down">Live Streaming</h3>
+                <div class="container" data-aos="zoom-in">
                     <iframe class="yt-embed" src="https://www.youtube.com/embed/z2oKzxplzEY">
                     </iframe>
-                    <a href="#" class="btn btn-custom">Join Youtube</a>
+                    <a href="#" class="btn btn-custom" data-aos="fade-down">Join Youtube</a>
                 </div>
             </div>
         </section>
         <section class="section-12">
             <img src="./assets/images/waves-header.png" alt="waves" class="waves">
             <div class="content">
-                <div class="container thank">
+                <div class="container thank" data-aos="zoom-in">
                     <h3 class="fw-bold text-capitalize">Thank You</h3>
                     <p>Thank you for joining our Live Wedding event</p>
                 </div>
@@ -431,6 +503,28 @@
         });
     </script>
     <!-- js plugins -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.8/dist/js/splide.js"
+        integrity="sha256-6EroBTJT/xoE+Qu93lvN4L6xstdeTcwE0UEgNmPGWjA=" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const splide = new Splide("#main-slider", {
+                pagination: false,
+            });
+
+            const thumbnails = new Splide('#thumbnail-slider', {
+                fixedWidth: 100,
+                flexHeight: 60,
+                pagination: false,
+                arrows: false,
+                focus: "center",
+                gap: 7,
+            });
+
+            splide.sync(thumbnails)
+            splide.mount();
+            thumbnails.mount();
+        });
+    </script>
     <script src="./assets/js/infiniteslidev2.js"></script>
     <script src="./assets/js/countdown.js"></script>
     <script src="./assets/js/lightslider.js"></script>

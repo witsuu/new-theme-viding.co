@@ -508,6 +508,7 @@
 .section-5 {
   position: relative;
   padding: 3rem 0;
+  overflow: hidden;
 }
 
 .section-5 h3,
