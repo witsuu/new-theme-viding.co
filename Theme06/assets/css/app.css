@@ -529,12 +529,13 @@
 }
 
 @media (max-width: 576px) {
-  .section-6 .content form .row .col-md-6 {
-    width: 50%;
+  .section-6 .content form .row {
+    gap: 1rem;
   }
 }
 
-.section-6 .content form .form-control {
+.section-6 .content form .form-control,
+.section-6 .content form .form-select {
   border-color: #ff8dbf;
   padding: 0.75rem 1rem;
   font-family: "Montserrat", sans-serif;
@@ -802,16 +803,25 @@ h5 {
   }
 }
 
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+
+@media (max-width: 576px) {
+  h6 {
+    font-size: 16px;
+  }
+}
+
 p,
-h6,
 ol {
   font-family: "Montserrat";
-  font-size: 20px;
+  font-size: 16px;
 }
 
 @media (max-width: 768px) {
   p,
-  h6,
   ol {
     line-height: 1.8rem;
   }
@@ -819,7 +829,6 @@ ol {
 
 @media (max-width: 576px) {
   p,
-  h6,
   ol {
     font-size: 14px;
     line-height: 1.8rem;

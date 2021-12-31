@@ -113,10 +113,10 @@
   background-image: url(../images/bg-header.jfif);
   background-position: center;
   background-size: cover;
-  top: 24px;
-  left: 24px;
-  bottom: 24px;
-  right: 24px;
+  top: 20px;
+  left: 20px;
+  bottom: 20px;
+  right: 20px;
 }
 
 @media (max-width: 576px) {
@@ -133,10 +133,10 @@
   position: absolute;
   content: "";
   background-color: rgba(0, 0, 0, 0.3);
-  top: 24px;
-  left: 24px;
-  bottom: 24px;
-  right: 24px;
+  top: 20px;
+  left: 20px;
+  bottom: 20px;
+  right: 20px;
 }
 
 @media (max-width: 576px) {
@@ -163,9 +163,15 @@
   }
 }
 
+@media (max-width: 992px) {
+  .section-1 .title-header {
+    bottom: 66px;
+  }
+}
+
 @media (max-width: 576px) {
   .section-1 .title-header {
-    bottom: 130px;
+    bottom: 33px;
     left: 33px;
   }
 }
@@ -565,6 +571,7 @@
 
 .section-6 {
   position: relative;
+  overflow: hidden;
 }
 
 .section-6 .content {
@@ -574,7 +581,8 @@
   background-color: #c5b4f5;
 }
 
-.section-6 .content form .form-control {
+.section-6 .content form .form-control,
+.section-6 .content form .form-select {
   border-color: #3b3450;
   padding: 0.75rem 1rem;
   font-family: "Public Sans", sans-serif;
@@ -583,19 +591,23 @@
   background-color: transparent;
 }
 
-.section-6 .content form .form-control::-webkit-input-placeholder {
+.section-6 .content form .form-control::-webkit-input-placeholder,
+.section-6 .content form .form-select::-webkit-input-placeholder {
   color: #3b3450;
 }
 
-.section-6 .content form .form-control:-ms-input-placeholder {
+.section-6 .content form .form-control:-ms-input-placeholder,
+.section-6 .content form .form-select:-ms-input-placeholder {
   color: #3b3450;
 }
 
-.section-6 .content form .form-control::-ms-input-placeholder {
+.section-6 .content form .form-control::-ms-input-placeholder,
+.section-6 .content form .form-select::-ms-input-placeholder {
   color: #3b3450;
 }
 
-.section-6 .content form .form-control::placeholder {
+.section-6 .content form .form-control::placeholder,
+.section-6 .content form .form-select::placeholder {
   color: #3b3450;
 }
 
@@ -714,6 +726,7 @@
 
 .section-8 {
   position: relative;
+  overflow: hidden;
 }
 
 .section-8 .content {

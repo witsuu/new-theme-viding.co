@@ -346,6 +346,15 @@
   }
 }
 
+@media (max-width: 576px) {
+  .section-3 .content .col-md-10 {
+    height: 100%;
+  }
+  .section-3 .content .col-md-10 .col-lg-10 {
+    padding: 0 1.25rem !important;
+  }
+}
+
 .section-4 {
   background-color: #4ba8924d;
 }
@@ -532,12 +541,13 @@
 }
 
 @media (max-width: 576px) {
-  .section-6 .content form .row .col-md-6 {
-    width: 50%;
+  .section-6 .content form .row {
+    gap: 1rem;
   }
 }
 
-.section-6 .content form .form-control {
+.section-6 .content form .form-control,
+.section-6 .content form .form-select {
   border-color: #4ba891;
   padding: 0.75rem 1rem;
   font-family: "Encode Sans", sans-serif;
@@ -665,6 +675,8 @@
   width: 78.05%;
   -o-object-position: center;
      object-position: center;
+  object-fit: cover;
+  height: 100%;
 }
 
 .section-8 .bg-color {
@@ -721,6 +733,12 @@
 @media (max-width: 768px) {
   .section-8 .content .col-md-10 {
     width: 83.33%;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-8 .content .col-md-10 .col-lg-6 p {
+    padding: 0 1.25rem !important;
   }
 }
 
@@ -861,7 +879,7 @@ h2 {
 }
 
 h3 {
-  font-family: "MD Serif Display";
+  font-family: "Encode Sans", sans-serif;
   font-size: 32px;
   font-weight: 700;
 }
@@ -873,7 +891,7 @@ h3 {
 }
 
 h4 {
-  font-family: "Encode Sans";
+  font-family: "Encode Sans", sans-serif;
   font-size: 31px;
 }
 
@@ -884,7 +902,7 @@ h4 {
 }
 
 h5 {
-  font-family: "Encode Sans";
+  font-family: "Encode Sans", sans-serif;
   font-size: 28px;
 }
 
@@ -894,16 +912,25 @@ h5 {
   }
 }
 
+h6 {
+  font-family: "Encode Sans", sans-serif;
+  font-size: 20px;
+}
+
+@media (max-width: 576px) {
+  h6 {
+    font-size: 16px;
+  }
+}
+
 p,
-h6,
 ol {
   font-family: "Encode Sans";
-  font-size: 20px;
+  font-size: 16px;
 }
 
 @media (max-width: 768px) {
   p,
-  h6,
   ol {
     line-height: 1.8rem;
   }
@@ -911,7 +938,6 @@ ol {
 
 @media (max-width: 576px) {
   p,
-  h6,
   ol {
     font-size: 14px;
     line-height: 1.8rem;

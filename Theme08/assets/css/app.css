@@ -597,14 +597,12 @@
 
 @media (max-width: 768px) {
   .section-6 .content .card form .row {
-    gap: 0;
-  }
-  .section-6 .content .card form .row .col-md-6 {
-    width: 50%;
+    gap: 1rem;
   }
 }
 
-.section-6 .content .card form .form-control {
+.section-6 .content .card form .form-control,
+.section-6 .content .card form .form-select {
   border: none;
   padding: 0.75rem 1rem;
   font-family: "Lato", sans-serif;
@@ -836,6 +834,50 @@
   color: #81b4da;
 }
 
+.gift-section {
+  position: relative;
+}
+
+.gift-section .content {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.gift-section .content h3 {
+  color: #81b4da;
+}
+
+.gift-section .content form .form-control {
+  border-color: #81b4da;
+  font-family: "Lato", sans-serif;
+  margin-bottom: 1rem;
+  padding: 0.75rem 1rem;
+}
+
+.gift-section .content form .form-control::-webkit-input-placeholder {
+  color: #404040;
+}
+
+.gift-section .content form .form-control:-ms-input-placeholder {
+  color: #404040;
+}
+
+.gift-section .content form .form-control::-ms-input-placeholder {
+  color: #404040;
+}
+
+.gift-section .content form .form-control::placeholder {
+  color: #404040;
+}
+
+.gift-section .content form .input-group .input-group-text {
+  color: #fff;
+  background-color: #81b4da;
+  margin-bottom: 1rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid #81b4da;
+}
+
 .section-9 {
   position: relative;
   overflow: hidden;
@@ -1021,7 +1063,7 @@ h2 {
 h3 {
   font-family: "Lato";
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 @media (max-width: 576px) {
@@ -1055,7 +1097,7 @@ h5 {
 
 h6 {
   font-family: "Lato";
-  font-size: 24px;
+  font-size: 20px;
 }
 
 @media (max-width: 576px) {
@@ -1067,7 +1109,7 @@ h6 {
 p,
 ol {
   font-family: "Lato";
-  font-size: 20px;
+  font-size: 16px;
 }
 
 @media (max-width: 768px) {
