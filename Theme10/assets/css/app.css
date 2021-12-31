@@ -935,7 +935,7 @@ h3 {
 
 @media (max-width: 576px) {
   h3 {
-    font-size: 20px;
+    font-size: 28px;
   }
 }
 
@@ -947,7 +947,7 @@ h4 {
 
 @media (max-width: 576px) {
   h4 {
-    font-size: 16px;
+    font-size: 24px;
   }
 }
 
@@ -958,7 +958,7 @@ h5 {
 
 @media (max-width: 576px) {
   h5 {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 
@@ -969,14 +969,14 @@ h6 {
 
 @media (max-width: 576px) {
   h6 {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
 p,
 ol {
   font-family: "Fira Sans";
-  font-size: 20px;
+  font-size: 16px;
 }
 
 @media (max-width: 768px) {

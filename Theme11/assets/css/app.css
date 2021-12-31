@@ -1000,7 +1000,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Bebas Neue";
+  font-family: "Public Sans";
   font-size: 32px;
   font-weight: 700;
   text-transform: uppercase;
@@ -1039,20 +1039,20 @@ h5 {
 
 h6 {
   font-family: "Public Sans";
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 600;
 }
 
 @media (max-width: 576px) {
   h6 {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
 p,
 ol {
   font-family: "Public Sans";
-  font-size: 20px;
+  font-size: 16px;
 }
 
 @media (max-width: 768px) {
