@@ -203,6 +203,16 @@
   text-align: center;
 }
 
+@media (max-width: 576px) {
+  .section-2 .content {
+    padding: 28px 0;
+  }
+  .section-2 .content p {
+    width: 70%;
+    margin: auto;
+  }
+}
+
 .section-2 .content h2 {
   color: #825e28;
 }
@@ -323,7 +333,8 @@
 
 @media (max-width: 576px) {
   .section-4 .content {
-    width: 95%;
+    width: 98%;
+    padding: 1.5rem 0;
   }
 }
 

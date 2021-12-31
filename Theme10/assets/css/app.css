@@ -245,6 +245,7 @@
 .section-2 .content .avatar-wrapper {
   position: relative;
   width: 75%;
+  height: 316px;
   margin: auto;
 }
 
@@ -357,7 +358,13 @@
 .section-3 .content .avatar-wrapper {
   position: relative;
   padding: 0 1rem;
-  width: 100%;
+  width: 70%;
+}
+
+@media (max-width: 576px) {
+  .section-3 .content .avatar-wrapper {
+    width: 100%;
+  }
 }
 
 .section-3 .content .avatar-wrapper .waves-top,
@@ -702,7 +709,13 @@
 .section-9 .content .avatar-wrapper {
   position: relative;
   padding: 0 1rem;
-  width: 100%;
+  width: 70%;
+}
+
+@media (max-width: 576px) {
+  .section-9 .content .avatar-wrapper {
+    width: 100%;
+  }
 }
 
 .section-9 .content .avatar-wrapper .waves-top,
