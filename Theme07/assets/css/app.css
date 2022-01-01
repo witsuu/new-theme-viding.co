@@ -27,22 +27,22 @@
   content: "";
   position: absolute;
   top: 50%;
-  left: -25px;
-  right: -25px;
+  left: -80px;
+  right: -80px;
   border-top: 1px solid #825e28;
 }
 
 @media (max-width: 768px) {
   .countdown::before {
-    left: -18px;
-    right: -18px;
+    left: -17px;
+    right: -17px;
   }
 }
 
 @media (max-width: 576px) {
   .countdown::before {
-    left: -2px;
-    right: -2px;
+    left: -1px;
+    right: -1px;
   }
 }
 
@@ -205,7 +205,7 @@
 
 @media (max-width: 576px) {
   .section-2 .content {
-    padding: 28px 0;
+    padding: 56px 0;
   }
   .section-2 .content p {
     width: 70%;
@@ -233,8 +233,8 @@
 }
 
 .section-2 .content .avatar-wrapper {
-  width: 100%;
-  height: auto;
+  width: 267px;
+  height: 328.48px;
   position: relative;
   z-index: 5;
   margin: auto;
@@ -244,15 +244,24 @@
           clip-path: polygon(26% 0%, 73% 0%, 100% 21%, 100% 80%, 74% 100%, 27% 100%, 0% 80%, 0% 20%);
 }
 
+@media (max-width: 1200px) {
+  .section-2 .content .avatar-wrapper {
+    width: 100%;
+    height: 278px;
+  }
+}
+
 @media (max-width: 768px) {
   .section-2 .content .avatar-wrapper {
     width: 320px;
+    height: 408px;
   }
 }
 
 @media (max-width: 576px) {
   .section-2 .content .avatar-wrapper {
     width: 200px;
+    height: 246px;
   }
 }
 
@@ -693,19 +702,19 @@
 }
 
 .gift-section .content form .form-control::-webkit-input-placeholder {
-  color: #404040;
+  color: #212529;
 }
 
 .gift-section .content form .form-control:-ms-input-placeholder {
-  color: #404040;
+  color: #212529;
 }
 
 .gift-section .content form .form-control::-ms-input-placeholder {
-  color: #404040;
+  color: #212529;
 }
 
 .gift-section .content form .form-control::placeholder {
-  color: #404040;
+  color: #212529;
 }
 
 .gift-section .content form .input-group .input-group-text {
@@ -841,9 +850,11 @@
   padding: 1rem 0;
 }
 
+body,
 html {
   font-size: 16px;
-  line-height: 1.8rem;
+  line-height: 26px;
+  font-weight: 400;
 }
 
 .btn-custom {
@@ -938,19 +949,27 @@ ol {
   font-size: 16px;
 }
 
-@media (max-width: 768px) {
-  p,
-  ol {
-    line-height: 1.8rem;
-  }
-}
-
 @media (max-width: 576px) {
   p,
   ol {
     font-size: 14px;
-    line-height: 1.8rem;
   }
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #212529;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #212529;
+}
+
+.form-control::-ms-input-placeholder {
+  color: #212529;
+}
+
+.form-control::placeholder {
+  color: #212529;
 }
 
 .rectangle {

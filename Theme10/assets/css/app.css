@@ -885,9 +885,11 @@
   color: #fff;
 }
 
+body,
 html {
   font-size: 16px;
-  line-height: 1.8rem;
+  line-height: 26px;
+  font-weight: 400;
 }
 
 .btn-custom {
@@ -949,7 +951,7 @@ h3 {
 
 @media (max-width: 576px) {
   h3 {
-    font-size: 28px;
+    font-size: 20px;
   }
 }
 
@@ -961,7 +963,7 @@ h4 {
 
 @media (max-width: 576px) {
   h4 {
-    font-size: 24px;
+    font-size: 18px;
   }
 }
 
@@ -972,7 +974,7 @@ h5 {
 
 @media (max-width: 576px) {
   h5 {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
@@ -983,7 +985,7 @@ h6 {
 
 @media (max-width: 576px) {
   h6 {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -1016,6 +1018,22 @@ ol {
   .title-with-border {
     margin-bottom: 28px !important;
   }
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #212529;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #212529;
+}
+
+.form-control::-ms-input-placeholder {
+  color: #212529;
+}
+
+.form-control::placeholder {
+  color: #212529;
 }
 
 .rectangle {

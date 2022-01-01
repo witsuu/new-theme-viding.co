@@ -835,9 +835,11 @@
   color: #ffffff;
 }
 
+body,
 html {
   font-size: 16px;
-  line-height: 1.8rem;
+  line-height: 26px;
+  font-weight: 400;
 }
 
 .btn-custom {
@@ -930,19 +932,27 @@ ol {
   font-size: 16px;
 }
 
-@media (max-width: 768px) {
-  p,
-  ol {
-    line-height: 1.8rem;
-  }
-}
-
 @media (max-width: 576px) {
   p,
   ol {
     font-size: 14px;
-    line-height: 1.8rem;
   }
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #212529;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #212529;
+}
+
+.form-control::-ms-input-placeholder {
+  color: #212529;
+}
+
+.form-control::placeholder {
+  color: #212529;
 }
 
 .color-primary {
