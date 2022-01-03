@@ -1037,6 +1037,15 @@
   -webkit-box-align: start !important;
       -ms-flex-align: start !important;
           align-items: flex-start !important;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.wish-sm .card .slider::-webkit-scrollbar {
+  display: none;
 }
 
 .wish-sm .card .slider div {
