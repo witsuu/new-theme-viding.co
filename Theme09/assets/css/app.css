@@ -175,6 +175,68 @@
   line-height: 48px;
 }
 
+.envelope-wrap {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  z-index: 100;
+  overflow-y: hidden;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+.envelope-wrap::before {
+  position: absolute;
+  content: "";
+  background-color: #00000050;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.envelope-wrap .background {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.envelope-wrap .envelope {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  -webkit-transform: translate(-50%, -10%);
+          transform: translate(-50%, -10%);
+  text-align: center;
+  color: #fff;
+}
+
+.envelope-wrap .envelope .btn-custom {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0.5rem 3rem;
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+
+.envelope-wrap .envelope .btn-custom:hover {
+  color: #fff;
+}
+
+.envelope-wrap .envelope .btn-custom:focus {
+  background-color: #4ba891;
+  border-color: #4ba891;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .section-2 {
   position: relative;
   overflow: hidden;
@@ -498,6 +560,35 @@
   margin-bottom: 0.75rem;
 }
 
+.section-5 .content .icons-prokes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+  margin: 1rem 0;
+}
+
+.section-5 .content .icons-prokes .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.section-5 .content .icons-prokes .icon svg path {
+  fill: #ffffff;
+  stroke: #ffffff;
+}
+
 .section-5 .content .sm {
   display: none;
 }
@@ -621,7 +712,7 @@
 .section-7 .content .card {
   background-color: #ffffff95;
   padding: 24px;
-  height: 348px;
+  height: 338px;
   border: none;
 }
 
@@ -936,6 +1027,17 @@ ol {
   p,
   ol {
     font-size: 14px;
+  }
+}
+
+small {
+  font-family: "Encode Sans";
+  font-size: 12px;
+}
+
+@media (max-width: 576px) {
+  small {
+    font-size: 10px;
   }
 }
 
