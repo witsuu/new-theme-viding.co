@@ -1081,6 +1081,7 @@ small {
   background-color: #ff8dbf;
   position: fixed;
   overflow: hidden;
+  z-index: 100;
 }
 
 .loader-wrapper .loader-1 {
