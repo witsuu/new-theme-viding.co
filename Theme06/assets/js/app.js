@@ -16,10 +16,10 @@ $(document).ready(() => {
   Countdown(date);
 
   //autoslider
-  $("#slider").infiniteslide({
-    speed: 50,
-    direction: "up",
-  });
+  // $("#slider").infiniteslide({
+  //   speed: 50,
+  //   direction: "up",
+  // });
 
   $("body").css("overflow-y", "hidden");
 

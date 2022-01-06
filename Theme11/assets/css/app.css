@@ -239,15 +239,16 @@
   overflow-y: hidden;
   -webkit-transition: all 1s ease-out;
   transition: all 1s ease-out;
+  background-color: #fff;
 }
 
 .envelope-wrap::before {
   position: fixed;
   background-color: #00000048;
-  left: 15px;
-  top: 15px;
-  right: 15px;
-  bottom: 15px;
+  left: 12px;
+  top: 12px;
+  right: 12px;
+  bottom: 12px;
   content: "";
   z-index: 2;
 }
@@ -259,7 +260,7 @@
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  padding: 15px;
+  padding: 12px;
 }
 
 .envelope-wrap .envelope {
@@ -306,11 +307,15 @@
   background-color: transparent;
   border: 2px solid #fff;
   color: #fff;
-  padding: 1rem 3rem;
+  padding: 0.25rem 1rem;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 .envelope-wrap .envelope .btn-custom:hover {
   color: #fff;
+  border: 2px solid #3b3450;
+  background-color: #3b3450;
 }
 
 .envelope-wrap .envelope .btn-custom:focus {
@@ -676,7 +681,7 @@
 }
 
 .section-5 .content .maps {
-  padding: 3rem 0;
+  padding: 3rem 0 0 0;
   text-align: center;
   position: relative;
 }

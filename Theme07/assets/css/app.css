@@ -229,6 +229,13 @@
   color: #fff;
 }
 
+@media (max-width: 576px) {
+  .envelope-wrap .envelope {
+    width: 100%;
+    bottom: 5%;
+  }
+}
+
 .envelope-wrap .envelope .btn-custom {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -236,13 +243,23 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  padding: 0.5rem 3rem;
+  padding: 0.25rem 2rem;
   background-color: transparent;
   border: 2px solid #fff;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+@media (max-width: 576px) {
+  .envelope-wrap .envelope .btn-custom {
+    padding: 0.25rem 1.5rem;
+  }
 }
 
 .envelope-wrap .envelope .btn-custom:hover {
   color: #fff;
+  border: 2px solid #825e28;
+  background-color: #825e28;
 }
 
 .envelope-wrap .envelope .btn-custom:focus {

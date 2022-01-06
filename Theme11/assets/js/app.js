@@ -31,6 +31,6 @@ $(document).ready(() => {
   $("#btn-envelope").on("click", function () {
     $("body").css("overflow-y", "auto");
 
-    $(".envelope-wrap").css("transform", "translateY(-100%)");
+    $(".envelope-wrap").css("transform", "translateX(-100%)");
   });
 });

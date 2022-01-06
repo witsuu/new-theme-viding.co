@@ -238,6 +238,16 @@
   transition: all 1s ease-out;
 }
 
+.envelope-wrap::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #0000000e;
+}
+
 .envelope-wrap .background {
   width: 100%;
   height: 100vh;
@@ -255,6 +265,14 @@
           transform: translate(-50%, -10%);
   text-align: center;
   color: #fff;
+  z-index: 5;
+}
+
+@media (max-width: 576px) {
+  .envelope-wrap .envelope {
+    width: 100%;
+    bottom: 5%;
+  }
 }
 
 .envelope-wrap .envelope .btn-custom {
@@ -264,13 +282,23 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  padding: 0.5rem 3rem;
+  padding: 0.25rem 2rem;
   background-color: transparent;
   border: 2px solid #fff;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+@media (max-width: 576px) {
+  .envelope-wrap .envelope .btn-custom {
+    padding: 0.25rem 1.5rem;
+  }
 }
 
 .envelope-wrap .envelope .btn-custom:hover {
   color: #fff;
+  background-color: #ff8dbf;
+  border: 2px solid #ff8dbf;
 }
 
 .envelope-wrap .envelope .btn-custom:focus {
@@ -747,7 +775,12 @@
 }
 
 .section-7 .content .card .card-body {
-  overflow: hidden;
+  overflow: auto;
+  word-wrap: break-word;
+}
+
+.section-7 .content .card .card-body::-webkit-scrollbar {
+  display: none;
 }
 
 .section-7 .content .card .slider {

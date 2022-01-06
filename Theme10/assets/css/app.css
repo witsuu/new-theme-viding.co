@@ -244,6 +244,13 @@
   color: #fff;
 }
 
+@media (max-width: 576px) {
+  .envelope-wrap .envelope {
+    width: 100%;
+    bottom: 5%;
+  }
+}
+
 .envelope-wrap .envelope .btn-custom {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -251,13 +258,23 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  padding: 0.5rem 3rem;
+  padding: 0.25rem 2rem;
   background-color: transparent;
   border: 2px solid #fff;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+@media (max-width: 576px) {
+  .envelope-wrap .envelope .btn-custom {
+    padding: 0.25rem 1.5rem;
+  }
 }
 
 .envelope-wrap .envelope .btn-custom:hover {
   color: #fff;
+  border: 2px solid #5f4f1e;
+  background-color: #5f4f1e;
 }
 
 .envelope-wrap .envelope .btn-custom:focus {
@@ -537,6 +554,12 @@
   overflow: hidden;
 }
 
+@media (max-width: 576px) {
+  .section-5 {
+    padding: 2rem 0 0 0;
+  }
+}
+
 .section-5 h3,
 .section-5 h4 {
   color: #5f4f1e;
@@ -692,7 +715,13 @@
 }
 
 .section-7 .content .card .card-body {
-  overflow: hidden;
+  padding: 0;
+  overflow: auto;
+  word-break: break-all;
+}
+
+.section-7 .content .card .card-body::-webkit-scrollbar {
+  display: none;
 }
 
 .section-7 .content .card .slider {
@@ -1115,16 +1144,6 @@ small {
 @media (max-width: 576px) {
   small {
     font-size: 10px;
-  }
-}
-
-.title-with-border {
-  margin-bottom: 40px !important;
-}
-
-@media (max-width: 576px) {
-  .title-with-border {
-    margin-bottom: 28px !important;
   }
 }
 
