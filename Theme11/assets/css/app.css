@@ -1266,7 +1266,7 @@ ol {
   width: 100%;
   background-color: #3b3450;
   position: fixed;
-  z-index: 100;
+  z-index: 1000;
 }
 
 .loader-wrapper .loader-1 {

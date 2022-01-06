@@ -1461,7 +1461,7 @@ small {
   width: 100%;
   background-color: #81b4da;
   position: fixed;
-  z-index: 100;
+  z-index: 1000;
 }
 
 .loader-wrapper .loader-1 {
