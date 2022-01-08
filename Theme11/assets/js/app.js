@@ -1,9 +1,9 @@
 $(document).ready(() => {
   //autoslider
-  $("[id='slider']").infiniteslide({
-    speed: 50,
-    direction: "up",
-  });
+  // $("[id='slider']").infiniteslide({
+  //   speed: 50,
+  //   direction: "up",
+  // });
 
   // $("#lightSlider").lightSlider({
   //   item: 1,

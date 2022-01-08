@@ -200,8 +200,15 @@
   height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  -o-object-position: center -340px;
+     object-position: center -340px;
+}
+
+@media (max-width: 1200px) {
+  .envelope-wrap .background {
+    -o-object-position: center;
+       object-position: center;
+  }
 }
 
 .envelope-wrap .envelope {
@@ -349,10 +356,34 @@
   right: 0;
   -o-object-fit: cover;
      object-fit: cover;
-  width: 78.05%;
+  width: 79%;
   height: 100%;
   -o-object-position: center;
      object-position: center;
+}
+
+@media (min-width: 1024px) {
+  .section-3 .bg-story {
+    width: 81.3%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section-3 .bg-story {
+    width: 79%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .section-3 .bg-story {
+    width: 80.55%;
+  }
+}
+
+@media (min-width: 2560px) {
+  .section-3 .bg-story {
+    width: 67.2%;
+  }
 }
 
 .section-3 .bg-color {
@@ -361,8 +392,32 @@
   top: 0;
   right: 0;
   content: "";
-  width: 78.05%;
+  width: 79%;
   height: 100%;
+}
+
+@media (min-width: 1024px) {
+  .section-3 .bg-color {
+    width: 81.3%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section-3 .bg-color {
+    width: 79%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .section-3 .bg-color {
+    width: 80.55%;
+  }
+}
+
+@media (min-width: 2560px) {
+  .section-3 .bg-color {
+    width: 67.2%;
+  }
 }
 
 .section-3 .content {
@@ -465,8 +520,8 @@
   height: 328px;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  -o-object-position: center -180px;
+     object-position: center -180px;
 }
 
 @media (max-width: 576px) {
@@ -503,6 +558,7 @@
   color: #ffffff;
   position: relative;
   text-align: center;
+  padding: 2rem 0;
 }
 
 .section-5 .content h3 {
@@ -516,18 +572,17 @@
           transform: scale(-1);
   color: #4ba891;
   margin: 0 0 0 100px;
-  padding: 2rem 0;
 }
 
 @media (max-width: 768px) {
   .section-5 .content h3 {
-    margin: 0 0 0 55px;
+    margin: 0 0 0 70px;
   }
 }
 
 @media (max-width: 576px) {
   .section-5 .content h3 {
-    margin: 0 0 0 10px;
+    margin: 0 0 0 20px;
   }
 }
 
@@ -548,13 +603,32 @@
 }
 
 .section-5 .content .col-md-10 .col-md-8 {
-  padding: 0 1.5rem;
+  padding: 0 0 0 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .section-5 .content .col-md-10 .col-md-8 {
+    padding: 0 0 0 1.4rem;
+  }
 }
 
 .section-5 .content .col-md-10 .bg {
   background-color: #4ba891;
   padding: 2rem 0;
+  margin: -2rem 0 0 0;
   text-align: left;
+}
+
+@media (max-width: 768px) {
+  .section-5 .content .col-md-10 .bg {
+    margin-left: 17px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-5 .content .col-md-10 .bg {
+    margin-left: 15px;
+  }
 }
 
 .section-5 .content .maps-wrapper {
@@ -574,6 +648,18 @@
   width: 100%;
   aspect-ratio: 2.5;
   margin-bottom: 0.75rem;
+}
+
+@media (max-width: 768px) {
+  .section-5 .content .maps-wrapper .maps-embed {
+    margin-left: 17px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-5 .content .maps-wrapper .maps-embed {
+    margin-left: 0;
+  }
 }
 
 .section-5 .content .icons-prokes {
@@ -785,11 +871,35 @@
   right: 0;
   -o-object-fit: cover;
      object-fit: cover;
-  width: 78.05%;
+  width: 79%;
   -o-object-position: center;
      object-position: center;
   object-fit: cover;
   height: 100%;
+}
+
+@media (min-width: 1024px) {
+  .section-8 .bg-story {
+    width: 81.3%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section-8 .bg-story {
+    width: 79%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .section-8 .bg-story {
+    width: 80.55%;
+  }
+}
+
+@media (min-width: 2560px) {
+  .section-8 .bg-story {
+    width: 67.2%;
+  }
 }
 
 .section-8 .bg-color {
@@ -798,8 +908,32 @@
   top: 0;
   right: 0;
   content: "";
-  width: 78.05%;
+  width: 79%;
   height: 100%;
+}
+
+@media (min-width: 1024px) {
+  .section-8 .bg-color {
+    width: 81.3%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section-8 .bg-color {
+    width: 79%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .section-8 .bg-color {
+    width: 80.55%;
+  }
+}
+
+@media (min-width: 2560px) {
+  .section-8 .bg-color {
+    width: 67.2%;
+  }
 }
 
 .section-8 .content {
