@@ -1118,6 +1118,13 @@ small {
   }
 }
 
+@media (max-width: 576px) {
+  .form-control,
+  .form-select {
+    font-size: 14px;
+  }
+}
+
 .form-control::-webkit-input-placeholder {
   color: #212529;
 }
