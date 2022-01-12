@@ -9,14 +9,6 @@ $(document).ready(() => {
   //   direction: "up",
   // });
 
-  $("#lightSlider").lightSlider({
-    item: 1,
-    gallery: true,
-    thumbItem: 4,
-    loop: true,
-    controls: true,
-  });
-
   $("body").css("overflow-y", "hidden");
 
   $("#btn-envelope").on("click", function () {
