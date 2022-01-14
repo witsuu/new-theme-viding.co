@@ -4,10 +4,10 @@ $(document).ready(() => {
   Countdown(date);
 
   //autoslider
-  $("[id='slider']").infiniteslide({
-    speed: 50,
-    direction: "up",
-  });
+  // $("[id='slider']").infiniteslide({
+  //   speed: 50,
+  //   direction: "up",
+  // });
 
   $("body").css("overflow-y", "hidden");
 

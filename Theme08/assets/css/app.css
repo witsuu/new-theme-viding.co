@@ -266,7 +266,7 @@
 }
 
 .envelope-wrap {
-  position: fixed;
+  position: absolute;
   height: 100vh;
   width: 100%;
   z-index: 100;
@@ -1464,7 +1464,7 @@ small {
 }
 
 .loader-wrapper {
-  position: fixed;
+  position: absolute;
   min-height: 100vh;
   background-color: #81b4da;
   display: -webkit-box;
