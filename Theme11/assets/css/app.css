@@ -1281,7 +1281,7 @@ ol {
 }
 
 .loader-wrapper {
-  position: absolute;
+  position: fixed;
   min-height: 100vh;
   background-color: #3b3450;
   display: -webkit-box;

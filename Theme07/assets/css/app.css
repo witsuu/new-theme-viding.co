@@ -1153,7 +1153,7 @@ small {
 }
 
 .loader-wrapper {
-  position: absolute;
+  position: fixed;
   min-height: 100vh;
   background-color: #825e28;
   display: -webkit-box;
