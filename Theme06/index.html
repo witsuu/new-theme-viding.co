@@ -1,413 +1,642 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Theme 06</title>
     <!-- libraries styles -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.8/dist/css/splide.min.css"
+      integrity="sha256-sB1O2oXn5yaSW1T/92q2mGU86IDhZ0j1Ya8eSv+6QfM="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/themes/splide-sea-green.min.css"
+      integrity="sha256-f5VBTVllurvsruIgvCq/4ZIozmtj71sC4Wlu77vzFbM="
+      crossorigin="anonymous"
+    />
     <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/magnific-popup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/magnific-popup.css" />
     <!-- custom style -->
-    <link rel="stylesheet" href="./assets/css/app.css">
-</head>
+    <link rel="stylesheet" href="./assets/css/app.css" />
+  </head>
 
-<body>
+  <body>
     <div class="loader-wrapper">
-        <div class="dots"></div>
-        <div class="dots"></div>
-        <div class="dots"></div>
-        <div class="dots"></div>
-        <!-- <div class="dots"></div> -->
+      <div class="dots"></div>
+      <div class="dots"></div>
+      <div class="dots"></div>
+      <div class="dots"></div>
+      <!-- <div class="dots"></div> -->
     </div>
     <script src="./assets/js/loader.js"></script>
     <main class="main-app">
-        <section class="envelope-wrap">
-            <img src="./assets/images/bg-header.jfif" alt="cover" class="background">
-            <div class="envelope">
-                <h5>You're Invited To Celebrate The Wedding</h5>
-                <h1 class="mt-4 mb-4">John & Jane</h1>
-                <button class="btn btn-custom" id="btn-envelope"><strong>Open The Invitation <i
-                            class="fas fa-envelope-open-text"></i></strong></button>
+      <section class="envelope-wrap">
+        <img
+          src="./assets/images/bg-header.jfif"
+          alt="cover"
+          class="background"
+        />
+        <div class="envelope">
+          <h5>You're Invited To Celebrate The Wedding</h5>
+          <h1 class="mt-4 mb-4">John & Jane</h1>
+          <button class="btn btn-custom" id="btn-envelope">
+            <strong
+              >Open The Invitation <i class="fas fa-envelope-open-text"></i
+            ></strong>
+          </button>
+        </div>
+      </section>
+      <section class="section-1">
+        <img src="./assets/images/daun-putih.png" alt="daun" class="hias-1" />
+        <img src="./assets/images/daun-putih.png" alt="daun" class="hias-2" />
+        <div class="container">
+          <div class="content">
+            <div class="top" data-aos="fade-down">
+              <img
+                src="./assets/images/viding-logo.png"
+                alt="logo"
+                class="logo-viding"
+              />
+              <h4>We’re getting married</h4>
+              <h1>John & Jane</h1>
             </div>
-        </section>
-        <section class="section-1">
-            <img src="./assets/images/daun-putih.png" alt="daun" class="hias-1">
-            <img src="./assets/images/daun-putih.png" alt="daun" class="hias-2">
-            <div class="container">
-                <div class="content">
-                    <div class="top" data-aos="fade-down">
-                        <img src="./assets/images/viding-logo.png" alt="logo" class="logo-viding">
-                        <h4>We’re getting married</h4>
-                        <h1>John & Jane</h1>
-                    </div>
 
-                    <div class="bottom" data-aos="fade-up">
-                        <a href="#" class="btn btn-custom"><i class="fas fa-clock me-2"></i>REMIND ME</a>
-                        <div class="countdown" date="12/31/2021 23:59:00">
-                            <div class="days">
-                                <h3 class="angka">00</h3>
-                                <p class="huruf">Days</p>
-                            </div>
-                            <div class="hours">
-                                <h3 class="angka">00</h3>
-                                <p class="huruf">Hours</p>
-                            </div>
-                            <div class="minutes">
-                                <h3 class="angka">00</h3>
-                                <p class="huruf">Minutes</p>
-                            </div>
-                            <div class="seconds">
-                                <h3 class="angka">00</h3>
-                                <p class="huruf">Seconds</p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="bottom" data-aos="fade-up">
+              <a href="#" class="btn btn-custom"
+                ><i class="fas fa-clock me-2"></i>REMIND ME</a
+              >
+              <div class="countdown" date="12/31/2021 23:59:00">
+                <div class="days">
+                  <h3 class="angka">00</h3>
+                  <p class="huruf">Days</p>
                 </div>
+                <div class="hours">
+                  <h3 class="angka">00</h3>
+                  <p class="huruf">Hours</p>
+                </div>
+                <div class="minutes">
+                  <h3 class="angka">00</h3>
+                  <p class="huruf">Minutes</p>
+                </div>
+                <div class="seconds">
+                  <h3 class="angka">00</h3>
+                  <p class="huruf">Seconds</p>
+                </div>
+              </div>
             </div>
-        </section>
-        <section class="section-2">
-            <div class="container">
-                <div class="content">
-                    <h3 class="mb-3" data-aos="zoom-in">Bride & Groom</h3>
-                    <p data-aos="fade-down" data-aos-delay="300">We’re gonna spend our <br>
-                        lives together.</p>
-                    <div class="row justify-content-between align-items-center">
-                        <div class="col-md-4" data-aos="fade-right">
-                            <div class="avatar-wrap">
-                                <img src="./assets/images/flower-bg.png" alt="flower" class="avatar-hias-man">
-                                <img src="./assets/images/avatar-man.jfif" alt="avatar" class="avatar-image">
-                            </div>
-                            <div class="avatar-detail">
-                                <h2>John Stew S.T, M.T</h2>
-                                <p>First son of H. Heru Stiawan and
-                                    Siti Amizah</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mt-sm" data-aos="fade-left">
-                            <div class="avatar-wrap">
-                                <img src="./assets/images/flower-bg.png" alt="flower" class="avatar-hias-girl">
-                                <img src="./assets/images/avatar-girl.jfif" alt="avatar" class="avatar-image">
-                            </div>
-                            <div class="avatar-detail">
-                                <h2>Jane Min .PhD</h2>
-                                <p>First daughter of H. Heru Stiawan and
-                                    Siti Amizah</p>
-                            </div>
-                        </div>
-                    </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-2">
+        <div class="container">
+          <div class="content">
+            <h3 class="mb-3" data-aos="zoom-in">Bride & Groom</h3>
+            <p data-aos="fade-down" data-aos-delay="300">
+              We’re gonna spend our <br />
+              lives together.
+            </p>
+            <div class="row justify-content-between align-items-center">
+              <div class="col-md-4" data-aos="fade-right">
+                <div class="avatar-wrap">
+                  <img
+                    src="./assets/images/flower-bg.png"
+                    alt="flower"
+                    class="avatar-hias-man"
+                  />
+                  <img
+                    src="./assets/images/avatar-man.jfif"
+                    alt="avatar"
+                    class="avatar-image"
+                  />
                 </div>
+                <div class="avatar-detail">
+                  <h2>John Stew S.T, M.T</h2>
+                  <p>First son of H. Heru Stiawan and Siti Amizah</p>
+                </div>
+              </div>
+              <div class="col-md-4 mt-sm" data-aos="fade-left">
+                <div class="avatar-wrap">
+                  <img
+                    src="./assets/images/flower-bg.png"
+                    alt="flower"
+                    class="avatar-hias-girl"
+                  />
+                  <img
+                    src="./assets/images/avatar-girl.jfif"
+                    alt="avatar"
+                    class="avatar-image"
+                  />
+                </div>
+                <div class="avatar-detail">
+                  <h2>Jane Min .PhD</h2>
+                  <p>First daughter of H. Heru Stiawan and Siti Amizah</p>
+                </div>
+              </div>
             </div>
-        </section>
-        <section class="section-3">
-            <img src="./assets/images/daun-putih.png" alt="daun" class="hias">
-            <div class="container">
-                <div class="content">
-                    <div class="row">
-                        <div class="col-md-8 m-auto">
-                            <h3 data-aos="fade-down">Our Story</h3>
-                            <p data-aos="zoom-in" data-aos-delay="300">Starting as a friend, we got to know each other.
-                                Night after night
-                                have been sending each
-                                other
-                                hundreds of messages. Not an obstacle even though it is thousands of kilometers and
-                                islands far
-                                apart
-                                Until at some point we made up our minds to extricate each other. Continuous prayers are
-                                said so
-                                that we are sure to complement each other. God is really very kind. Guide our hearts. At
-                                first
-                                it was full of puzzles, until it became clear which path we had to take.</p>
-                        </div>
-                    </div>
-                </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-3">
+        <img src="./assets/images/daun-putih.png" alt="daun" class="hias" />
+        <div class="container">
+          <div class="content">
+            <div class="row">
+              <div class="col-md-8 m-auto">
+                <h3 data-aos="fade-down">Our Story</h3>
+                <p data-aos="zoom-in" data-aos-delay="300">
+                  Starting as a friend, we got to know each other. Night after
+                  night have been sending each other hundreds of messages. Not
+                  an obstacle even though it is thousands of kilometers and
+                  islands far apart Until at some point we made up our minds to
+                  extricate each other. Continuous prayers are said so that we
+                  are sure to complement each other. God is really very kind.
+                  Guide our hearts. At first it was full of puzzles, until it
+                  became clear which path we had to take.
+                </p>
+              </div>
             </div>
-        </section>
-        <section class="section-4">
-            <img src="./assets/images/daun-putih.png" alt="daun" class="hias">
-            <img src="./assets/images/flower-bg.png" alt="flower" class="flower">
-            <div class="container">
-                <div class="content">
-                    <div class="zoom-gallery">
-                        <a href="./assets/images/photos01.jfif">
-                            <img src="./assets/images/photos01.jfif" alt="photo" class="photo">
-                        </a>
-                        <a href="./assets/images/photos02.jfif">
-                            <img src="./assets/images/photos02.jfif" alt="photo" class="photo">
-                        </a>
-                    </div>
-                </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-4">
+        <div class="container">
+          <div class="content">
+            <div class="splide">
+              <div class="splide__arrows">
+                <button class="splide__arrow splide__arrow--prev">
+                  <svg
+                    width="42"
+                    height="16"
+                    viewBox="0 0 42 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M41 9C41.5523 9 42 8.55228 42 8C42 7.44772 41.5523 7 41 7L41 9ZM0.292892 7.2929C-0.0976296 7.68342 -0.0976295 8.31659 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41422 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928935C7.68054 0.538411 7.04738 0.538411 6.65685 0.928935L0.292892 7.2929ZM41 7L1 7L1 9L41 9L41 7Z"
+                      fill="#F9FDF9"
+                    />
+                  </svg>
+                </button>
+                <button class="splide__arrow splide__arrow--next">
+                  <svg
+                    width="42"
+                    height="16"
+                    viewBox="0 0 42 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM41.7071 8.70711C42.0976 8.31658 42.0976 7.68342 41.7071 7.29289L35.3431 0.928932C34.9526 0.538408 34.3195 0.538408 33.9289 0.928932C33.5384 1.31946 33.5384 1.95262 33.9289 2.34315L39.5858 8L33.9289 13.6569C33.5384 14.0474 33.5384 14.6805 33.9289 15.0711C34.3195 15.4616 34.9526 15.4616 35.3431 15.0711L41.7071 8.70711ZM1 9H41V7H1V9Z"
+                      fill="#F9FDF9"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="splide__track">
+                <ul class="splide__list" id="zoom-gallery">
+                  <li class="splide__slide position-relative">
+                    <a href="./assets/images/photos01.jfif">
+                      <img
+                        src="./assets/images/photos01.jfif"
+                        alt="photo"
+                        class="photo"
+                      />
+                    </a>
+                  </li>
+                  <li class="splide__slide position-relative">
+                    <a href="./assets/images/photos02.jfif">
+                      <img
+                        src="./assets/images/photos02.jfif"
+                        alt="photo"
+                        class="photo"
+                      />
+                    </a>
+                  </li>
+                  <li class="splide__slide position-relative">
+                    <a href="./assets/images/photos01.jfif">
+                      <img
+                        src="./assets/images/photos01.jfif"
+                        alt="photo"
+                        class="photo"
+                      />
+                    </a>
+                  </li>
+                  <li class="splide__slide position-relative">
+                    <a href="./assets/images/photos02.jfif">
+                      <img
+                        src="./assets/images/photos02.jfif"
+                        alt="photo"
+                        class="photo"
+                      />
+                    </a>
+                  </li>
+                  <li class="splide__slide position-relative">
+                    <a href="./assets/images/photos01.jfif">
+                      <img
+                        src="./assets/images/photos01.jfif"
+                        alt="photo"
+                        class="photo"
+                      />
+                    </a>
+                  </li>
+                  <li class="splide__slide position-relative">
+                    <a href="./assets/images/photos02.jfif">
+                      <img
+                        src="./assets/images/photos02.jfif"
+                        alt="photo"
+                        class="photo"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
-        </section>
-        <section class="section-5">
-            <div class="content">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-md-5">
-                            <h3 data-aos="fade-down">Venue</h3>
-                            <p>If you will be present at the event location. Please follow health protocol and fill
-                                the form below</p>
-                            <div class="icons-prokes">
-                                <div class="icon">
-                                    <svg width="50" height="34" viewBox="0 0 50 34" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M24.6325 0.805313C24.8725 0.731562 25.1275 0.731562 25.3675 0.805313L41.6175 5.80531C41.8731 5.88392 42.0967 6.04241 42.2555 6.25749C42.4144 6.47258 42.5 6.73293 42.5 7.00031V8.25031H43.75C45.4076 8.25031 46.9973 8.90879 48.1694 10.0809C49.3415 11.253 50 12.8427 50 14.5003V19.5003C50 21.1579 49.3415 22.7476 48.1694 23.9197C46.9973 25.0918 45.4076 25.7503 43.75 25.7503H40.68C39.2438 27.959 37.0772 29.5929 34.5587 30.3666L25.3675 33.1953C25.128 33.2689 24.872 33.2689 24.6325 33.1953L15.4412 30.3666C12.9228 29.5929 10.7562 27.959 9.32 25.7503H6.25C4.5924 25.7503 3.00268 25.0918 1.83058 23.9197C0.65848 22.7476 0 21.1579 0 19.5003V14.5003C0 12.8427 0.65848 11.253 1.83058 10.0809C3.00268 8.90879 4.5924 8.25031 6.25 8.25031H7.5V7.00031C7.49995 6.73293 7.58563 6.47258 7.74447 6.25749C7.90331 6.04241 8.12694 5.88392 8.3825 5.80531L24.6325 0.805313ZM7.5 19.6141C7.5 20.8766 7.71 22.1016 8.1025 23.2503H6.25C5.25544 23.2503 4.30161 22.8552 3.59835 22.152C2.89509 21.4487 2.5 20.4949 2.5 19.5003V14.5003C2.5 13.5058 2.89509 12.5519 3.59835 11.8487C4.30161 11.1454 5.25544 10.7503 6.25 10.7503H7.5V19.6141ZM41.8975 23.2503H43.75C44.7446 23.2503 45.6984 22.8552 46.4016 22.152C47.1049 21.4487 47.5 20.4949 47.5 19.5003V14.5003C47.5 13.5058 47.1049 12.5519 46.4016 11.8487C45.6984 11.1454 44.7446 10.7503 43.75 10.7503H42.5V19.6141C42.5 20.8766 42.29 22.1016 41.8975 23.2503ZM32.5 13.2503H17.5V10.7503H32.5V13.2503ZM32.5 20.7503H17.5V18.2503H32.5V20.7503Z"
-                                            fill="#5F4F1E" />
-                                    </svg>
-                                    <small>Use Medical Mask</small>
-                                </div>
-                                <div class="icon">
-                                    <svg width="34" height="46" viewBox="0 0 34 46" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M2.46004 6.745C2.82504 6.1075 3.53004 5.12 4.41004 4.31C5.31754 3.47375 6.22004 3 7.00004 3H15.75V10.5H10.75C10.087 10.5 9.45111 10.7634 8.98227 11.2322C8.51343 11.7011 8.25004 12.337 8.25004 13V16.75H7.00004C5.34244 16.75 3.75272 17.4085 2.58062 18.5806C1.40852 19.7527 0.750039 21.3424 0.750039 23V43C0.750039 43.663 1.01343 44.2989 1.48227 44.7678C1.95111 45.2366 2.587 45.5 3.25004 45.5H30.75C31.4131 45.5 32.049 45.2366 32.5178 44.7678C32.9866 44.2989 33.25 43.663 33.25 43V23C33.25 21.3424 32.5916 19.7527 31.4195 18.5806C30.2474 17.4085 28.6576 16.75 27 16.75H25.75V13C25.75 12.337 25.4866 11.7011 25.0178 11.2322C24.549 10.7634 23.9131 10.5 23.25 10.5H18.25V3H28.25V0.5H7.00004C5.28004 0.5 3.78754 1.48375 2.71504 2.47125C1.61504 3.48375 0.758789 4.68375 0.290039 5.505L2.46004 6.745ZM9.50004 29.25H15.75V23H18.25V29.25H24.5V31.75H18.25V38H15.75V31.75H9.50004V29.25Z"
-                                            fill="#5F4F1E" />
-                                    </svg>
-                                    <small>Wash Hand</small>
-                                </div>
-                                <div class="icon">
-                                    <svg width="50" height="36" viewBox="0 0 50 36" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M5 5.5H45" stroke="#5F4F1E" stroke-width="2" />
-                                        <path
-                                            d="M8.53712 1.75L5.88712 4.40125C5.7709 4.51734 5.6787 4.6552 5.61579 4.80695C5.55289 4.9587 5.52051 5.12135 5.52051 5.28562C5.52051 5.44989 5.55289 5.61255 5.61579 5.7643C5.6787 5.91605 5.7709 6.05391 5.88712 6.17L8.53837 8.82"
-                                            stroke="#5F4F1E" stroke-width="2" stroke-linecap="round" />
-                                        <path
-                                            d="M41.4629 8.82125L44.1141 6.16875C44.3485 5.93434 44.4801 5.61646 44.4801 5.285C44.4801 4.95355 44.3485 4.63566 44.1141 4.40125L41.4629 1.75"
-                                            stroke="#5F4F1E" stroke-width="2" stroke-linecap="round" />
-                                        <path
-                                            d="M12.5 19.875C12.5 20.7038 12.1708 21.4987 11.5847 22.0847C10.9987 22.6708 10.2038 23 9.375 23C8.5462 23 7.75134 22.6708 7.16529 22.0847C6.57924 21.4987 6.25 20.7038 6.25 19.875C6.25 19.0462 6.57924 18.2513 7.16529 17.6653C7.75134 17.0792 8.5462 16.75 9.375 16.75C10.2038 16.75 10.9987 17.0792 11.5847 17.6653C12.1708 18.2513 12.5 19.0462 12.5 19.875Z"
-                                            fill="#5F4F1E" stroke="#5F4F1E" stroke-width="2" />
-                                        <path
-                                            d="M1.25 30.8337C1.25 29.8675 2.13625 28.8388 4.0325 27.9738C5.8225 27.1588 7.99 26.75 9.375 26.75C10.76 26.75 12.9275 27.1575 14.7175 27.975C16.6125 28.8375 17.5 29.8662 17.5 30.8325V34.25H1.25V30.8337Z"
-                                            fill="#5F4F1E" stroke="#5F4F1E" stroke-width="2" />
-                                        <path
-                                            d="M43.75 19.875C43.75 20.7038 43.4208 21.4987 42.8347 22.0847C42.2487 22.6708 41.4538 23 40.625 23C39.7962 23 39.0013 22.6708 38.4153 22.0847C37.8292 21.4987 37.5 20.7038 37.5 19.875C37.5 19.0462 37.8292 18.2513 38.4153 17.6653C39.0013 17.0792 39.7962 16.75 40.625 16.75C41.4538 16.75 42.2487 17.0792 42.8347 17.6653C43.4208 18.2513 43.75 19.0462 43.75 19.875Z"
-                                            fill="#5F4F1E" stroke="#5F4F1E" stroke-width="2" />
-                                        <path
-                                            d="M32.5 30.8337C32.5 29.8675 33.3863 28.8388 35.2825 27.9738C37.0725 27.1588 39.24 26.75 40.625 26.75C42.01 26.75 44.1775 27.1575 45.9675 27.975C47.8625 28.8375 48.75 29.8662 48.75 30.8325V34.25H32.5V30.8337Z"
-                                            fill="#5F4F1E" stroke="#5F4F1E" stroke-width="2" />
-                                    </svg>
-                                    <small>Keep The Distance</small>
-                                </div>
-                            </div>
-                            <h5 data-aos="zoom-in">Hotel Shangri -La</h5>
-                            <p data-aos="zoom-in">Kota BNI, Jl. Jend. Sudirman No.Kav. 1, Karet Tengsin, Kecamatan Tanah
-                                Abang, Kota
-                                Jakarta Pusat,
-                                Daerah Khusus Ibukota Jakarta 10220</p>
-                        </div>
-                    </div>
-                    <div class="gmap_canvas" data-aos="fade-up">
-                        <iframe class="maps-embed" id="gmap_canvas"
-                            src="https://maps.google.com/maps?q=itc%20surabaya&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-                        </iframe>
-                    </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-5">
+        <img src="./assets/images/flower-bg.png" alt="flower" class="flower" />
+        <div class="content">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-md-5">
+                <h3 data-aos="fade-down">Venue</h3>
+                <p>
+                  If you will be present at the event location. Please follow
+                  health protocol and fill the form below
+                </p>
+                <div class="icons-prokes">
+                  <div class="icon">
+                    <svg
+                      width="50"
+                      height="34"
+                      viewBox="0 0 50 34"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M24.6325 0.805313C24.8725 0.731562 25.1275 0.731562 25.3675 0.805313L41.6175 5.80531C41.8731 5.88392 42.0967 6.04241 42.2555 6.25749C42.4144 6.47258 42.5 6.73293 42.5 7.00031V8.25031H43.75C45.4076 8.25031 46.9973 8.90879 48.1694 10.0809C49.3415 11.253 50 12.8427 50 14.5003V19.5003C50 21.1579 49.3415 22.7476 48.1694 23.9197C46.9973 25.0918 45.4076 25.7503 43.75 25.7503H40.68C39.2438 27.959 37.0772 29.5929 34.5587 30.3666L25.3675 33.1953C25.128 33.2689 24.872 33.2689 24.6325 33.1953L15.4412 30.3666C12.9228 29.5929 10.7562 27.959 9.32 25.7503H6.25C4.5924 25.7503 3.00268 25.0918 1.83058 23.9197C0.65848 22.7476 0 21.1579 0 19.5003V14.5003C0 12.8427 0.65848 11.253 1.83058 10.0809C3.00268 8.90879 4.5924 8.25031 6.25 8.25031H7.5V7.00031C7.49995 6.73293 7.58563 6.47258 7.74447 6.25749C7.90331 6.04241 8.12694 5.88392 8.3825 5.80531L24.6325 0.805313ZM7.5 19.6141C7.5 20.8766 7.71 22.1016 8.1025 23.2503H6.25C5.25544 23.2503 4.30161 22.8552 3.59835 22.152C2.89509 21.4487 2.5 20.4949 2.5 19.5003V14.5003C2.5 13.5058 2.89509 12.5519 3.59835 11.8487C4.30161 11.1454 5.25544 10.7503 6.25 10.7503H7.5V19.6141ZM41.8975 23.2503H43.75C44.7446 23.2503 45.6984 22.8552 46.4016 22.152C47.1049 21.4487 47.5 20.4949 47.5 19.5003V14.5003C47.5 13.5058 47.1049 12.5519 46.4016 11.8487C45.6984 11.1454 44.7446 10.7503 43.75 10.7503H42.5V19.6141C42.5 20.8766 42.29 22.1016 41.8975 23.2503ZM32.5 13.2503H17.5V10.7503H32.5V13.2503ZM32.5 20.7503H17.5V18.2503H32.5V20.7503Z"
+                        fill="#5F4F1E"
+                      />
+                    </svg>
+                    <small>Use Medical Mask</small>
+                  </div>
+                  <div class="icon">
+                    <svg
+                      width="34"
+                      height="46"
+                      viewBox="0 0 34 46"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M2.46004 6.745C2.82504 6.1075 3.53004 5.12 4.41004 4.31C5.31754 3.47375 6.22004 3 7.00004 3H15.75V10.5H10.75C10.087 10.5 9.45111 10.7634 8.98227 11.2322C8.51343 11.7011 8.25004 12.337 8.25004 13V16.75H7.00004C5.34244 16.75 3.75272 17.4085 2.58062 18.5806C1.40852 19.7527 0.750039 21.3424 0.750039 23V43C0.750039 43.663 1.01343 44.2989 1.48227 44.7678C1.95111 45.2366 2.587 45.5 3.25004 45.5H30.75C31.4131 45.5 32.049 45.2366 32.5178 44.7678C32.9866 44.2989 33.25 43.663 33.25 43V23C33.25 21.3424 32.5916 19.7527 31.4195 18.5806C30.2474 17.4085 28.6576 16.75 27 16.75H25.75V13C25.75 12.337 25.4866 11.7011 25.0178 11.2322C24.549 10.7634 23.9131 10.5 23.25 10.5H18.25V3H28.25V0.5H7.00004C5.28004 0.5 3.78754 1.48375 2.71504 2.47125C1.61504 3.48375 0.758789 4.68375 0.290039 5.505L2.46004 6.745ZM9.50004 29.25H15.75V23H18.25V29.25H24.5V31.75H18.25V38H15.75V31.75H9.50004V29.25Z"
+                        fill="#5F4F1E"
+                      />
+                    </svg>
+                    <small>Wash Hand</small>
+                  </div>
+                  <div class="icon">
+                    <svg
+                      width="50"
+                      height="36"
+                      viewBox="0 0 50 36"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M5 5.5H45" stroke="#5F4F1E" stroke-width="2" />
+                      <path
+                        d="M8.53712 1.75L5.88712 4.40125C5.7709 4.51734 5.6787 4.6552 5.61579 4.80695C5.55289 4.9587 5.52051 5.12135 5.52051 5.28562C5.52051 5.44989 5.55289 5.61255 5.61579 5.7643C5.6787 5.91605 5.7709 6.05391 5.88712 6.17L8.53837 8.82"
+                        stroke="#5F4F1E"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M41.4629 8.82125L44.1141 6.16875C44.3485 5.93434 44.4801 5.61646 44.4801 5.285C44.4801 4.95355 44.3485 4.63566 44.1141 4.40125L41.4629 1.75"
+                        stroke="#5F4F1E"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M12.5 19.875C12.5 20.7038 12.1708 21.4987 11.5847 22.0847C10.9987 22.6708 10.2038 23 9.375 23C8.5462 23 7.75134 22.6708 7.16529 22.0847C6.57924 21.4987 6.25 20.7038 6.25 19.875C6.25 19.0462 6.57924 18.2513 7.16529 17.6653C7.75134 17.0792 8.5462 16.75 9.375 16.75C10.2038 16.75 10.9987 17.0792 11.5847 17.6653C12.1708 18.2513 12.5 19.0462 12.5 19.875Z"
+                        fill="#5F4F1E"
+                        stroke="#5F4F1E"
+                        stroke-width="2"
+                      />
+                      <path
+                        d="M1.25 30.8337C1.25 29.8675 2.13625 28.8388 4.0325 27.9738C5.8225 27.1588 7.99 26.75 9.375 26.75C10.76 26.75 12.9275 27.1575 14.7175 27.975C16.6125 28.8375 17.5 29.8662 17.5 30.8325V34.25H1.25V30.8337Z"
+                        fill="#5F4F1E"
+                        stroke="#5F4F1E"
+                        stroke-width="2"
+                      />
+                      <path
+                        d="M43.75 19.875C43.75 20.7038 43.4208 21.4987 42.8347 22.0847C42.2487 22.6708 41.4538 23 40.625 23C39.7962 23 39.0013 22.6708 38.4153 22.0847C37.8292 21.4987 37.5 20.7038 37.5 19.875C37.5 19.0462 37.8292 18.2513 38.4153 17.6653C39.0013 17.0792 39.7962 16.75 40.625 16.75C41.4538 16.75 42.2487 17.0792 42.8347 17.6653C43.4208 18.2513 43.75 19.0462 43.75 19.875Z"
+                        fill="#5F4F1E"
+                        stroke="#5F4F1E"
+                        stroke-width="2"
+                      />
+                      <path
+                        d="M32.5 30.8337C32.5 29.8675 33.3863 28.8388 35.2825 27.9738C37.0725 27.1588 39.24 26.75 40.625 26.75C42.01 26.75 44.1775 27.1575 45.9675 27.975C47.8625 28.8375 48.75 29.8662 48.75 30.8325V34.25H32.5V30.8337Z"
+                        fill="#5F4F1E"
+                        stroke="#5F4F1E"
+                        stroke-width="2"
+                      />
+                    </svg>
+                    <small>Keep The Distance</small>
+                  </div>
                 </div>
+                <h5 data-aos="zoom-in">Hotel Shangri -La</h5>
+                <p data-aos="zoom-in">
+                  Kota BNI, Jl. Jend. Sudirman No.Kav. 1, Karet Tengsin,
+                  Kecamatan Tanah Abang, Kota Jakarta Pusat, Daerah Khusus
+                  Ibukota Jakarta 10220
+                </p>
+              </div>
             </div>
-        </section>
-        <section class="section-6">
-            <img src="./assets/images/flower-bg.png" alt="flower" class="flower">
-            <div class="content">
-                <div class="container">
-                    <h3 data-aos="fade-down">RSVP</h3>
-                    <form action="#" method="post" data-aos="zoom-in">
-                        <div class="row mb-3">
-                            <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="Name">
-                            </div>
-                            <div class="col-md-6">
-                                <input type="email" class="form-control" placeholder="E-Mail">
-                            </div>
-                        </div>
-                        <div class="row mb-3">
-                            <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="Phone Number">
-                            </div>
-                            <div class="col-md-6">
-                                <input type="email" class="form-control" placeholder="The Number of Guest">
-                            </div>
-                        </div>
-                        <div class="row mb-4 justify-content-center">
-                            <div class="col-lg-6 col-sm-12">
-                                <select class="form-select">
-                                    <option selected disabled>Confirmation Attendance</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="row mb-3 justify-content-center">
-                            <div class="col-md-6">
-                                <button type="submit" class="btn btn-custom">Send</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+            <div class="gmap_canvas" data-aos="fade-up">
+              <iframe
+                class="maps-embed"
+                id="gmap_canvas"
+                src="https://maps.google.com/maps?q=itc%20surabaya&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+              >
+              </iframe>
             </div>
-        </section>
-        <section class="section-7">
-            <img src="./assets/images/daun-putih.png" alt="daun" class="hias">
-            <div class="content">
-                <div class="container">
-                    <h3 data-aos="fade-down">Guest Book</h3>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <form action="#" method="post" data-aos="fade-right" data-aos-delay="500">
-                                <input type="text" class="form-control mb-3" placeholder="Name">
-                                <input type="text" class="form-control mb-3" placeholder="Address">
-                                <textarea name="" id="" cols="30" rows="5" class="form-control mb-3"
-                                    placeholder="Write Your Wishes"></textarea>
-                                <button type="submit" class="btn btn-custom">Send</button>
-                            </form>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card" data-aos="fade-left" data-aos-delay="500">
-                                <div class="card-body">
-                                    <div class="slider" id="slider">
-                                        <div>
-                                            <p><strong>Dewi</strong> | 3 Days ago</p>
-                                            <p>Happy Married guys!</p>
-                                        </div>
-                                        <div>
-                                            <p><strong>Dewi</strong> | 3 Days ago</p>
-                                            <p>Happy Married guys!</p>
-                                        </div>
-                                        <div>
-                                            <p><strong>Dewi</strong> | 3 Days ago</p>
-                                            <p>Happy Married guys!</p>
-                                        </div>
-                                        <div>
-                                            <p><strong>Dewi</strong> | 3 Days ago</p>
-                                            <p>Happy Married guys!</p>
-                                        </div>
-                                        <div>
-                                            <p><strong>Dewi</strong> | 3 Days ago</p>
-                                            <p>Happy Married guys!</p>
-                                        </div>
-                                        <div>
-                                            <p><strong>Dewi</strong> | 3 Days ago</p>
-                                            <p>Happy Married guys!</p>
-                                        </div>
-                                        <div>
-                                            <p><strong>Dewi</strong> | 3 Days ago</p>
-                                            <p>Happy Married guys!</p>
-                                        </div>
-                                        <div>
-                                            <p><strong>Dewi</strong> | 3 Days ago</p>
-                                            <p>Happy Married guys!</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-6">
+        <img src="./assets/images/flower-bg.png" alt="flower" class="flower" />
+        <div class="content">
+          <div class="container">
+            <h3 data-aos="fade-down">RSVP</h3>
+            <form action="#" method="post" data-aos="zoom-in">
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <input type="text" class="form-control" placeholder="Name" />
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="E-Mail"
+                  />
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Phone Number"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="The Number of Guest"
+                  />
+                </div>
+              </div>
+              <div class="row mb-4 justify-content-center">
+                <div class="col-lg-6 col-sm-12">
+                  <select class="form-select">
+                    <option selected disabled>Confirmation Attendance</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row mb-3 justify-content-center">
+                <div class="col-md-6">
+                  <button type="submit" class="btn btn-custom">Send</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="section-7">
+        <img src="./assets/images/daun-putih.png" alt="daun" class="hias" />
+        <div class="content">
+          <div class="container">
+            <h3 data-aos="fade-down">Guest Book</h3>
+            <div class="row">
+              <div class="col-md-6">
+                <form
+                  action="#"
+                  method="post"
+                  data-aos="fade-right"
+                  data-aos-delay="500"
+                >
+                  <input
+                    type="text"
+                    class="form-control mb-3"
+                    placeholder="Name"
+                  />
+                  <input
+                    type="text"
+                    class="form-control mb-3"
+                    placeholder="Address"
+                  />
+                  <textarea
+                    name=""
+                    id=""
+                    cols="30"
+                    rows="5"
+                    class="form-control mb-3"
+                    placeholder="Write Your Wishes"
+                  ></textarea>
+                  <button type="submit" class="btn btn-custom">Send</button>
+                </form>
+              </div>
+              <div class="col-md-6">
+                <div class="card" data-aos="fade-left" data-aos-delay="500">
+                  <div class="card-body">
+                    <div class="slider" id="slider">
+                      <div>
+                        <p><strong>Dewi</strong> | 3 Days ago</p>
+                        <p>Happy Married guys!</p>
+                      </div>
+                      <div>
+                        <p><strong>Dewi</strong> | 3 Days ago</p>
+                        <p>Happy Married guys!</p>
+                      </div>
+                      <div>
+                        <p><strong>Dewi</strong> | 3 Days ago</p>
+                        <p>Happy Married guys!</p>
+                      </div>
+                      <div>
+                        <p><strong>Dewi</strong> | 3 Days ago</p>
+                        <p>Happy Married guys!</p>
+                      </div>
+                      <div>
+                        <p><strong>Dewi</strong> | 3 Days ago</p>
+                        <p>Happy Married guys!</p>
+                      </div>
+                      <div>
+                        <p><strong>Dewi</strong> | 3 Days ago</p>
+                        <p>Happy Married guys!</p>
+                      </div>
+                      <div>
+                        <p><strong>Dewi</strong> | 3 Days ago</p>
+                        <p>Happy Married guys!</p>
+                      </div>
+                      <div>
+                        <p><strong>Dewi</strong> | 3 Days ago</p>
+                        <p>Happy Married guys!</p>
+                      </div>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
-        <section class="section-8">
-            <div class="content">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-md-6">
-                            <h3 data-aos="fade-down">Apology</h3>
-                            <p data-aos="zoom-in">Due to the limitations of the current pandemic, we apologize for not
-                                being able to
-                                directly invite all of
-                                you to our wedding. Without reducing respect, allow us to expect your virtual presence
-                                and give us your
-                                blessing.
-                                Thank you</p>
-                        </div>
-                    </div>
-                </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-8">
+        <div class="content">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-md-6">
+                <h3 data-aos="fade-down">Apology</h3>
+                <p data-aos="zoom-in">
+                  Due to the limitations of the current pandemic, we apologize
+                  for not being able to directly invite all of you to our
+                  wedding. Without reducing respect, allow us to expect your
+                  virtual presence and give us your blessing. Thank you
+                </p>
+              </div>
             </div>
-        </section>
-        <section class="section-9">
-            <img src="./assets/images/flower-bg.png" alt="flower" class="flower">
-            <div class="content">
-                <div class="container">
-                    <h3 class="mb-4" data-aos="fade-down">Live Streaming</h3>
-                    <div data-aos="fade-up" data-aos-anchor-placement="top-center">
-                        <iframe class="yt-embed" src="https://www.youtube.com/embed/z2oKzxplzEY">
-                        </iframe>
-                        <a href="#" class="btn btn-custom">Join Youtube</a>
-                    </div>
-                </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-9">
+        <img src="./assets/images/flower-bg.png" alt="flower" class="flower" />
+        <div class="content">
+          <div class="container">
+            <h3 class="mb-4" data-aos="fade-down">Live Streaming</h3>
+            <div data-aos="fade-up" data-aos-anchor-placement="top-center">
+              <iframe
+                class="yt-embed"
+                src="https://www.youtube.com/embed/z2oKzxplzEY"
+              >
+              </iframe>
+              <a href="#" class="btn btn-custom">Join Youtube</a>
             </div>
-        </section>
-        <section class="section-10">
-            <div class="content">
-                <div class="container">
-                    <div class="mb-3 col-md-5 col-lg-4 m-auto">
-                        <div data-aos="fade-right">
-                            <h4 class="fw-bold">Live Wedding <br> Schedule</h4>
-                            <ol>
-                                <li>
-                                    <p class="mb-0">10.00 Live Wedding Schedule</p>
-                                </li>
-                                <li>
-                                    <p class="mb-0">13.00 Lunch Party</p>
-                                </li>
-                            </ol>
-                        </div>
-                    </div>
-                    <div class="col-md-6 m-auto">
-                        <div data-aos="fade-left">
-                            <h4 class="fw-bold">Live Wedding</h4>
-                            <p>Please watch throught the bride's Youtube Live to watch a series of live wedding events
-                            </p>
-                        </div>
-                    </div>
-                </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-10">
+        <div class="content">
+          <div class="container">
+            <div class="mb-3 col-md-5 col-lg-4 m-auto">
+              <div data-aos="fade-right">
+                <h4 class="fw-bold">
+                  Live Wedding <br />
+                  Schedule
+                </h4>
+                <ol>
+                  <li>
+                    <p class="mb-0">10.00 Live Wedding Schedule</p>
+                  </li>
+                  <li>
+                    <p class="mb-0">13.00 Lunch Party</p>
+                  </li>
+                </ol>
+              </div>
             </div>
-        </section>
-        <section class="section-11">
-            <div class="container">
-                <div class="content thank" data-aos="zoom-in">
-                    <h3 class="fw-bold">Thank You</h3>
-                    <p class="text-capitalize mb-0">Thank you for joining Our Live Wedding Event</p>
-                </div>
+            <div class="col-md-6 m-auto">
+              <div data-aos="fade-left">
+                <h4 class="fw-bold">Live Wedding</h4>
+                <p>
+                  Please watch throught the bride's Youtube Live to watch a
+                  series of live wedding events
+                </p>
+              </div>
             </div>
-            <footer class="text-center text-white">
-                <div class="container">
-                    <small>Copyright 2021 © Created with ❤️ by viding.co</small>
-                </div>
-            </footer>
-        </section>
+          </div>
+        </div>
+      </section>
+      <section class="section-11">
+        <div class="container">
+          <div class="content thank" data-aos="zoom-in">
+            <h3 class="fw-bold">Thank You</h3>
+            <p class="text-capitalize mb-0">
+              Thank you for joining Our Live Wedding Event
+            </p>
+          </div>
+        </div>
+        <footer class="text-center text-white">
+          <div class="container">
+            <small>Copyright 2021 © Created with ❤️ by viding.co</small>
+          </div>
+        </footer>
+      </section>
     </main>
 
     <!-- js libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({
-            easing: "ease-out-back",
-            duration: 1000,
-        });
+      AOS.init({
+        easing: "ease-out-back",
+        duration: 1000,
+      });
     </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.8/dist/js/splide.js"
+      integrity="sha256-6EroBTJT/xoE+Qu93lvN4L6xstdeTcwE0UEgNmPGWjA="
+      crossorigin="anonymous"
+    ></script>
     <!-- js plugins -->
     <script src="./assets/js/infiniteslidev2.js"></script>
     <script src="./assets/js/countdown.js"></script>
     <!-- js customs -->
     <script src="./assets/js/jquery.magnific-popup.min.js"></script>
     <script src="./assets/js/app.js"></script>
-</body>
-
+  </body>
 </html>

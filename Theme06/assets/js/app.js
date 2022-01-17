@@ -1,6 +1,24 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const splide = new Splide(".splide", {
+    type: "loop",
+    perPage: 3,
+    pagination: false,
+    gap: '.75rem',
+    perMove: 1,
+    focus: 'center',
+    breakpoints: {
+      576: {
+        perPage: 1,
+      }
+    }
+  });
+  splide.mount();
+});
+
 $(document).ready(() => {
-  $(".zoom-gallery").magnificPopup({
-    delegate: "a",
+
+  $("#zoom-gallery").magnificPopup({
+    delegate: "li a",
     type: "image",
     mainClass: "mfp-with-zoom mfp-img-mobile",
     gallery: {
@@ -14,12 +32,6 @@ $(document).ready(() => {
   // countdown
   const date = $(".countdown").attr("date");
   Countdown(date);
-
-  //autoslider
-  // $("#slider").infiniteslide({
-  //   speed: 50,
-  //   direction: "up",
-  // });
 
   $("body").css("overflow-y", "hidden");
 
