@@ -650,17 +650,19 @@
 }
 
 .section-5 .flower {
-  top: 0;
+  top: -70px;
   left: -70px;
   position: absolute;
   width: 200px;
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
+  z-index: 50;
 }
 
 @media (max-width: 576px) {
   .section-5 .flower {
-    width: 150px;
+    width: 130px;
+    top: -70px;
   }
 }
 
